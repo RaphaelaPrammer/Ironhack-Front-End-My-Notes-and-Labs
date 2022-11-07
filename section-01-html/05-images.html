@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
+    
+    <h1>Images</h1>
+    <p>Images can improve the design and appearence of any weg and thus the user experience of the endUser.</p>
+
+    <p>accepted formats: JPEG, PNG, SVG, ICO, GIF, APNG, WEBP</p>
+
+    <hr>
+
+    <strong>Syntax</strong><br>
+
+    <style>
+        img {
+            display: block;
+            width: 500px;
+            margin: 1rem 0;
+        }
+    </style>
+
+    <img src="specifies the path to the image that we want to desplay, either internal or external path. " alt="in case of error and the image cannot be displayed this is the alternative text that shows instead of the image.">
+    <br><br>
+    <!-- linking an internal image within our folder structure  -->
+    <img style="width: 500px" src="../section-01-html/imgs/turnstile-pic.jpeg" alt="Turnstile-pic">
+
+    <!-- linking with external source with a style inside the a tag -->
+    <img style="width: 500px" src="https://www.revolvermag.com/sites/default/files/media/images/article/turnstile-creditcody-cowan_0.jpg" alt="turnstile-pic2">
+
+    <!-- linking an external gif  -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN-DxgX5lbZu6j7elVgm1NLpE56LCFxumBBALhUa3iWpfuXrJFdjrSiZM-3QqVXboaArk&usqp=CAU" alt="turnstile-gif">
+
+    <h3>using a figure tag</h3>
+    <img src="https://www.revolvermag.com/sites/default/files/media/images/article/turnstile-creditcody-cowan_0.jpg" alt="turnstile-fig">
+    <figcaption>Image of Turnstile</figcaption>
+
+    <a href="https://es.wikipedia.org/wiki/Turnstile" target="_blank" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Turnstile_Full_Force_2019_02.jpg/1024px-Turnstile_Full_Force_2019_02.jpg" alt="Turnstile-WIki"></a>
+
+</body>
+</html>
