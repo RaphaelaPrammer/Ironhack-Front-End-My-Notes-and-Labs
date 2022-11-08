@@ -18,4 +18,4 @@ This is the overview of the course content with personal notes.
    in this lecture we learned different types of typo tags like `<strong>`, `<p>`, `<del>`, `<b>`, `<i>`, `<em>`, `<mark>`, `<sub>`, `<sub>`
 
 4. [Links](section-01-html\04-Links.html) <br>
-   different ways to insert a link: \_blank, \_self, \_parent,
+   different ways to insert a link: \_blank, \_self, \_parent, \_top
