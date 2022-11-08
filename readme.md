@@ -19,3 +19,14 @@ This is the overview of the course content with personal notes.
 
 4. [Links](section-01-html\04-Links.html) <br>
    different ways to insert a link: \_blank, \_self, \_parent, \_top
+
+5. [Images](section-01-html\05-images.html) <br>  
+   Here we learned how to attach an image, an image as a link to an external page, also how to add a `<figcaption>`-Figure Tag to add a title for the image
+
+6. [Lists](section-01-html\06-List.html) <br>
+   Ordered and unordered Lists
+
+7. [Layouts](section-01-html\07-layouts.html) <br>
+   how to structure the body inside the html, with header, nav, main, article, div, section, footer
+
+8. [Layout Example](section-01-html\08-layout-example.html) <br>
