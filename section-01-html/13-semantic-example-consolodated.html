@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic site</title>
+
+    <!-- css style tag -->
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4;
+        background: rgb(241, 238, 238);
+      }
+
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+
+      #header {
+        margin-bottom: 15px;
+        background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+        color: white;
+        padding: 10px;
+      }
+
+      #main {
+        float: left;
+        width: 69%;
+      }
+
+      #sidebar {
+        float: right;
+        width: 29%;
+      }
+
+      .clr {
+        clear: both;
+      }
+
+      #footer {
+        background: #333;
+        color: white;
+        padding: 10px;
+      }
+
+      .text-center {
+        display: block;
+        text-align: center;
+      }
+
+      .card {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 10px;
+        border: solid 2px black;
+      }
+
+      #blog {
+        background-color: #d0efc5;
+        padding: 20px;
+        margin-bottom: 10px;
+        border: solid 2px black;
+      }
+      #main-nav a{
+        text-decoration: none;
+        color:#333;
+      }
+
+      button {
+        padding: 10px;
+        font-size: 1.1em;
+        background-color: salmon;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header  -->
+    <header id="header" class="card text-center">
+      <h1>My Website</h1>
+      <p>Just another website</p>
+    </header>
+
+    <!-- Main content  -->
+    <main id="main">
+      <!-- welcome section  -->
+      <section id="welcome" class="card">
+        <h2>Welcome to our Website</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+          vitae autem repellendus, pariatur fuga atque natus quos ad est
+          debitis, saepe placeat quidem ipsa expedita facilis aliquid facere
+          voluptatum. <br />
+          <a href="#" class="text-center">Click for more.</a>
+        </p>
+      </section>
+
+      <!-- blog section  -->
+      <section id="blog">
+        <h2>From our Blog</h2>
+        <article class="article">
+          <h3>Article 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et rem est
+            sequi magnam inventore porro voluptas, assumenda nulla, cumque ipsa
+            id obcaecati minus doloremque iusto incidunt ad blanditiis
+            accusantium vitae.
+          </p>
+        </article>
+
+        <article class="article">
+          <h3>Article 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
+            corporis quod voluptatibus natus perspiciatis non nam beatae,
+            aspernatur molestias temporibus necessitatibus itaque commodi
+            doloribus! Ad modi consectetur perspiciatis omnis natus.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- aside content - sidebar -->
+    <aside id="sidebar" class="card">
+      <h3>Navigation</h3>
+      <nav>
+        <ul id="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <hr />
+      <button>Contact us</button>
+      <ul>
+        <li><strong>Address:</strong> 1234 Abbey Road, London, 08012, UK</li>
+        <li><strong>Phone</strong>+49 1234 1234</li>
+        <li><strong>EMail</strong>info@abbeyroadstudios.co.uk</li>
+      </ul>
+    </aside>
+    <div class="clr"></div>
+
+    <!-- Footer content  -->
+    <footer id="footer">
+      <p class="text-center">Copyright &copy; My Website 2022</p>
+    </footer>
+  </body>
+</html>

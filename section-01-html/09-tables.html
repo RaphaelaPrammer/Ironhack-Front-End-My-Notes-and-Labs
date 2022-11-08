@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <h2>Syntax</h2>
+
+    <ul>
+      <li>tr = defines table row</li>
+      <li>th = defines table head</li>
+      <li>td = defines table display</li>
+    </ul>
+    <h2>Example Table 1</h2>
+
+    <table>
+      <tr>
+        <th>Band Name</th>
+        <th>Genre</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>The Strokes</td>
+        <td>Rock</td>
+        <td>New York</td>
+      </tr>
+      <tr>
+        <td>Backstreet BOys</td>
+        <td>Pop</td>
+        <td>Orlando, Florida</td>
+      </tr>
+      <tr>
+        <td>Black Sabbath</td>
+        <td>Metal/Rock</td>
+        <td>Birmingham</td>
+      </tr>
+    </table>
+    <hr />
+
+    <h3>Example Table 2</h3>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+      <tr>
+        <td>09:00 - 21:00</td>
+        <td></td>
+        <td></td>
+        <td>X</td>
+        <td></td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+      </tr>
+      <tr>
+        <td>12:00-12:00</td>
+        <td>X</td>
+        <td>X</td>
+        <td></td>
+        <td></td>
+        <td>X</td>
+        <td>X</td>
+        <td></td>
+      </tr>
+    </table>
+
+    <style>
+      * {
+        font-family: arial, sans-serif;
+      }
+
+      img {
+        width: 200px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+
+      .schedule {
+        font-size: 12px;
+      }
+    </style>
+
+    <br /><br /><br />
+    <hr />
+
+    <h2>Mis Comidas Preferidas</h2>
+    <table id="food-table">
+      <tr class="head-favfood">
+        <th>Favourite Food</th>
+        <th>Where is it from</th>
+        <th>How does it look like</th>
+        <th>Personal Ranking</th>
+      </tr>
+      <tr class="food-row">
+        <td class="food-type">Pizza</td>
+        <td class="food-country">Italy</td>
+        <td class="food-img"><img src="imgs\pizza.jpeg" alt="pzza" /></td>
+        <td class="food-ranking">10</td>
+      </tr>
+      <tr class="food-row">
+        <td class="food-type">Thai Curry</td>
+        <td class="food-country">Thailand</td>
+        <td class="food-img">
+          <img src="imgs\thaicurry.jpeg" alt="thaicurry" />
+        </td>
+        <td class="food-ranking">8</td>
+      </tr>
+      <tr class="food-row">
+        <td class="food-type">Tacos</td>
+        <td class="food-img">Mexico</td>
+        <td class="food-img"><img src="imgs\tacos.jpeg" alt="tacos" /></td>
+        <td class="food-ranking">7</td>
+      </tr>
+      <tr class="food-row">
+        <td class="food-type">Käsespätzle</td>
+        <td class="food-img">Austria</td>
+        <td class="food-img">
+          <img src="imgs\kaesespaetzle.jpeg" alt="kasspotzn" />
+        </td>
+        <td class="food-ranking">6</td>
+      </tr>
+    </table>
+  </body>
+</html>
