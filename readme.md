@@ -56,6 +56,8 @@ This is the overview of the course content with personal notes.
   other selectors to direct childs of a parent-element:<br>
   **CSS Specificity**
 
+  **CSS Pseudo selectors**
+
   2.1 [Basics-Exercise](section-02-css\02-1-exercise.htmlsection-02-css\02-1-exercise.html)<br>
 
 3. [Fonts](section-02-css\03-fonts.html)<br>

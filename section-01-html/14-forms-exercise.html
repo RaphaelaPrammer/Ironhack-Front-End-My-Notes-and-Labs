@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Form</title>
+
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+      h1 {
+        text-align: center;
+      }
+      #registrationForm {
+        border: solid 3px black;
+        border-radius: 20px;
+        padding: 50px;
+        width: 600px;
+        margin: 40px auto;
+        background-color: rgba(245, 245, 220, 0.219);
+      }
+      #registrationForm input[type="text"],
+      input[type="number"],
+      input[type="email"],
+      input[type="password"],
+      input[type="url"] {
+        width: 100%;
+        height: 40px;
+        padding-left: 10px;
+        margin-top: 10px;
+      }
+      #registrationForm input[type="date"],
+      input[type="color"] {
+        width: 20%;
+        height: 40px;
+        padding: 0 10;
+      }
+      #registrationForm label {
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+      #registrationForm input #favcolor {
+        width: 50px;
+      }
+
+      .gral {
+        padding: 10px;
+      }
+      .btn {
+        display: block;
+        margin: 20px auto;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+        background-color: rgba(197, 176, 174, 0.253);
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+
+    <form id="registrationForm">
+      <div class="nameForm gral">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your Name here"
+        />
+      </div>
+      <div class="dob gral">
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob" />
+      </div>
+      <div class="age gral">
+        <label for="age">Age</label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          min="1"
+          max="105"
+          placeholder="Enter your Age here"
+        />
+      </div>
+      <div class="email gral">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your Email here"
+        />
+      </div>
+      <div class="password gral">
+        <label for="pwd">Password</label>
+        <input
+          type="password"
+          name="pwd"
+          id="pwd"
+          maxlength="15"
+          minlength="8"
+          placeholder="Enter your Password here"
+        />
+      </div>
+      <div class="cardnumber gral">
+        <label for="cardnumber">Card Number</label>
+        <input
+          type="text"
+          name="cardnumber"
+          id="cardnumber"
+          minlength="16"
+          maxlength="16"
+          placeholder="Enter your Name here"
+        />
+      </div>
+      <div class="favColor gral">
+        <label for="favcolor">Favourite Color</label>
+        <input type="color" name="favcolor" id="favcolor" />
+      </div>
+      <div class="url gral">
+        <label for="url">Your Website</label>
+        <input
+          type="url"
+          name="url"
+          id="url"
+          placeholder="Enter your URL here"
+        />
+      </div>
+      <div class="file gral">
+        <label for="file">Upload your files</label> <br /><br />
+        <input type="file" name="file" id="file" />
+      </div>
+      <input class="btn" type="submit" value="submit form" />
+    </form>
+    <script>
+      registrationForm.onsubmit = (e) => {
+        e.preventDefault();
+
+        let name = document.getElementById("name").value;
+        let dateOfBirth = document.getElementById("dob").value;
+        let age = document.getElementById("age").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("pwd").value;
+        let cardNumber = document.getElementById("cardnumber").value;
+        let color = document.getElementById("favcolor").value;
+        let url = document.getElementById("url").value;
+        let file = document.getElementById("file").value;
+
+        if (name === "" || password === "") {
+          alert("you have forgot something");
+        } else {
+          alert(` Great ${name} job, you have a free lunch!!!`);
+        }
+      };
+    </script>
+  </body>
+</html>

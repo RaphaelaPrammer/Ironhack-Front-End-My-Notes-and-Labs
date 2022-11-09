@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float Exercise</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+      }
+      .container {
+        max-width: 80%;
+        margin: 50px auto;
+      }
+
+      #box-left {
+        float: left;
+        background-color: rgb(192, 241, 202);
+        width: 45%;
+        border: solid 4px lightgreen;
+        padding: 10px;
+        border-radius: 20px;
+      }
+
+      #box-right {
+        float: right;
+        background-color: burlywood;
+        width: 45%;
+        border: solid 4px orange;
+        padding: 10px;
+        border-radius: 20px;
+      }
+
+      #box-left a {
+        text-decoration: none;
+        color: black;
+        background-color: rgba(64, 114, 98, 0.363);
+        padding: 4px;
+        border: solid, black, 1px;
+        border-radius: 4px;
+        margin: 10px auto;
+        display: block;
+        text-align: center;
+      }
+
+      #box-right a {
+        text-decoration: none;
+        color: black;
+        background-color: rgba(98, 57, 37, 0.363);
+        padding: 4px;
+        border: solid, black, 1px;
+        border-radius: 4px;
+        display: block;
+        text-align: center;
+      }
+
+      .clear {
+        clear: both;
+      }
+
+      button {
+        padding: 10px;
+        background-color: beige;
+        border-radius: 10px;
+        margin: 40px auto;
+      }
+      footer {
+        text-align: center;
+      }
+
+/* exercise selectors with parent and child  */
+
+
+#someID > div > div > p{
+  color:yellow;
+}
+
+
+.first-class ~ p{
+  color: green;
+}
+
+      /* pseudo selectors practice */
+
+      .block1 p:first-child {
+        color: blue;
+      }
+
+      .block2 p:last-child {
+        color: aqua;
+      }
+
+      .block3 p:nth-child(3) {
+        color: red;
+      }
+
+      .block4 p:nth-child(even) {
+        color: purple;
+        font-weight: bold;
+        background-color: yellow;
+      }
+
+      .block5 span:first-of-type {
+        color: violet;
+        font-weight: bold;
+      }
+
+      .block6 span:last-of-type {
+        color: yellow;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Ironhack Frontend Course</h1>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="box" id="box-left">
+          <h3>What we already know:</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <a href="#">See Lesson</a>
+        </div>
+        <div class="box" id="box-right">
+          <h3>What we will learn:</h3>
+          <ul>
+            <li>JavaScript</li>
+            <li>VueJs</li>
+          </ul>
+          <a href="#">See Lesson</a>
+        </div>
+      </div>
+    </section>
+    <div class="clear"></div>
+
+    <section>
+      <div id="someID">
+        <h2>Exercise Selector with Parent --- not finished!!!</h2>
+        <div class="first-class">
+          <p>some text 1</p>
+          <p>lsdjfklsdjkfl</p>
+          <p>añlsdkjfalksd</p>
+        </div>
+        <p>another text</p>
+        <p>some more text</p>
+        <div>
+          <div>
+            <p>a p in a div in a div</p>
+            <p>blublblaskdfnkl</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+    <hr />
+
+    <section id="pseudo-selector-practice">
+      <h2>Exercise with pseudo selectors</h2>
+      <div class="block1">
+        <p>text 1</p>
+        <p>text 2</p>
+        <p>text 3</p>
+        <p>text 4</p>
+        <p>text 5</p>
+      </div>
+      <hr />
+      <div class="block2">
+        <p>text 1</p>
+        <p>text 2</p>
+        <p>text 3</p>
+        <p>text 4</p>
+        <p>text 5</p>
+      </div>
+      <hr />
+      <div class="block3">
+        <p>text 1</p>
+        <p>text 2</p>
+        <p>text 3</p>
+        <p>text 4</p>
+        <p>text 5</p>
+      </div>
+      <hr />
+      <div class="block4">
+        <p>text 1</p>
+        <p>text 2</p>
+        <p>text 3</p>
+        <p>text 4</p>
+        <p>text 5</p>
+      </div>
+      <hr />
+      < class="block5">
+        <p>text 1</p>
+        <span>text 2</span>
+        <p>text 3</p>
+        <span>text 4</span>
+        <p>text 5</p>
+      </div>
+      <hr />
+      <div class="block6">
+        <p>text 1</p>
+        <div>
+          <span>text 2</span>
+        </div>
+        <p>text 3</p>
+        <span>text 4</span>
+        <p>text 5</p>
+      </div>
+      <hr />
+    </section>
+
+    <footer>
+      <div>
+        <button>Go Back</button>
+      </div>
+    </footer>
+  </body>
+</html>
