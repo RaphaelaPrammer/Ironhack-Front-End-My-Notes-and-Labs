@@ -31,12 +31,13 @@ body {
 }
 .img-ingredients {
   display: block;
-  margin: 40px auto;
-  width: 50%;
+  margin: 20px auto;
+  width: 40%;
 }
 
 hr {
   margin-bottom: 50px;
+  
 }
 
 ul,
@@ -50,6 +51,6 @@ ul li {
 
 .img-directions {
   display: block;
-  margin: 40px auto;
-  width: 40%;
+  margin: 20px auto;
+  width: 30%;
 }
