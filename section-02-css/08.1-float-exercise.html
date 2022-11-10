@@ -73,22 +73,18 @@
         background-color: beige;
         border-radius: 10px;
         margin: 40px auto;
-      }
-      footer {
-        text-align: center;
+        display: block;
       }
 
-/* exercise selectors with parent and child  */
+      /* exercise selectors with parent and child  */
 
+      #someID > div > div > p {
+        color: yellow;
+      }
 
-#someID > div > div > p{
-  color:yellow;
-}
-
-
-.first-class ~ p{
-  color: green;
-}
+      .first-class ~ p {
+        color: green;
+      }
 
       /* pseudo selectors practice */
 
@@ -149,6 +145,14 @@
     </section>
     <div class="clear"></div>
 
+    <footer>
+      <div>
+        <button>Go Back</button>
+      </div>
+    </footer>
+
+    <hr />
+
     <section>
       <div id="someID">
         <h2>Exercise Selector with Parent --- not finished!!!</h2>
@@ -205,7 +209,7 @@
         <p>text 5</p>
       </div>
       <hr />
-      < class="block5">
+      <div class="block5">
         <p>text 1</p>
         <span>text 2</span>
         <p>text 3</p>
@@ -225,10 +229,7 @@
       <hr />
     </section>
 
-    <footer>
-      <div>
-        <button>Go Back</button>
-      </div>
-    </footer>
+    <hr />
+    <hr />
   </body>
 </html>

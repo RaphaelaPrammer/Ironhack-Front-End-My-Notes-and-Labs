@@ -31,15 +31,26 @@ This is the overview of the course content with personal notes.
 
 8. [Layout Example](section-01-html\08-layout-example.html) <br>
 
-9.
+9. [Tables](section-01-html\09-tables.html)<br>
 
-10.
+10. [Inline-vs-Block-Elements](section-01-html\10-inline-vs-block.html)<br>
 
-11.
+11. [IDs](section-01-html\11-ids.html)<br>
 
-12.
+12. [Classes](section-01-html\12-classes.html)<br>
 
-13.
+13. [Sematnic-Example](section-01-html\13-semantic-example-consolodated.html)<br>
+
+14. [Forms](section-01-html\14-forms.html)<br>
+
+- Form Elements and Syntax
+- Form Attributes
+- Input Types
+- Input Attributes
+- Example
+
+- [Forms-Example](section-01-html\14-forms-exercise.html)<br>
+  Registration form with a bit of JavaScript
 
 ### **[CSS](section-02-css)**
 
@@ -73,3 +84,9 @@ This is the overview of the course content with personal notes.
   0=Full Opacity, 1 = 0 Opacity
 
 6. [Border-Background](section-02-css\06-border-backgrounds.html)<br>
+
+7. [Box-Model](section-02-css\07-box-model.html)<br>
+
+8. [Float](section-02-css\08-float.html)<br>
+
+9. [Links-and-BUttons] (section-02-css\09-links-buttons.html)<br>
