@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        height: 500px;
+        width: 500px;
+        background-color: rgb(89, 94, 92);
+        position: relative;
+      }
+
+      section div {
+        width: 200px;
+        height: 200px;
+      }
+
+      section div:nth-child(1) {
+        background-image: url("./imgs/watussirind.jpeg");
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background-position: right center;
+        background-repeat: none;
+      }
+
+      section div:nth-child(2) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url("./imgs/pingu.jpeg");
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+      }
+
+      section div:nth-child(3) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-image: url("./imgs/otter.jpeg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: none;
+      }
+
+      section div:last-child {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: url("./imgs/corgy.jpeg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>my favourite animals 2</h1>
+
+    <section>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  </body>
+</html>

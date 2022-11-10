@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise Position</title>
+    <style>
+      .container {
+        height: 500px;
+        width: 500px;
+        margin: 0 auto;
+        background-color: aquamarine;
+        position: relative;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .box {
+        height: 200px;
+        width: 200px;
+      }
+      #animal-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: grey;
+        background-image: url("./imgs/watussirind.jpeg");
+        background-size: cover;
+        background-position: right center;
+        background-repeat: none;
+      }
+
+      #animal-2 {
+        background: blue;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url("./imgs/pingu.jpeg");
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+      }
+
+      #animal-3 {
+        background: rgb(0, 255, 4);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-image: url("./imgs/otter.jpeg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: none;
+      }
+      #animal-4 {
+        background: rgb(255, 0, 0);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: url("./imgs/corgy.jpeg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: none;
+      }
+
+      /* without classes and ids  */
+
+      section {
+        height: 500px;
+        width: 500px;
+        background-color: rgb(89, 94, 92);
+        position: relative;
+      }
+
+      section div {
+        width: 200px;
+        height: 200px;
+      }
+
+      section div:nth-child(1) {
+        background-image: url("./imgs/watussirind.jpeg");
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background-size: 200px 200px;
+        background-position: right center;
+        background-repeat: none;
+      }
+
+      section div:nth-child(2) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url("./imgs/pingu.jpeg");
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+      }
+
+      section div:nth-child(3) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-image: url("./imgs/otter.jpeg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: none;
+      }
+
+      section div:last-child {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: url("./imgs/corgy.jpeg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>my favourite animals</h1>
+
+    <div class="container">
+      <div id="animal-1" class="box"></div>
+      <div id="animal-2" class="box"></div>
+      <div id="animal-3" class="box"></div>
+      <div id="animal-4" class="box"></div>
+    </div>
+
+    <hr />
+
+    <h1>my favourite animals 2</h1>
+    <p>positioning without classes and ids - only with pseudo selectors</p>
+
+    <section>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  </body>
+</html>
