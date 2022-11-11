@@ -39,7 +39,7 @@ This is the overview of the course content with personal notes.
 
 12. [Classes](section-01-html\12-classes.html)<br>
 
-13. [Sematnic-Example](section-01-html\13-semantic-example-consolodated.html)<br>
+13. [Semantic-Example](section-01-html\13-semantic-example-consolodated.html)<br>
 
 14. [Forms](section-01-html\14-forms.html)<br>
 
@@ -90,3 +90,29 @@ This is the overview of the course content with personal notes.
 8. [Float](section-02-css\08-float.html)<br>
 
 9. [Links-and-BUttons] (section-02-css\09-links-buttons.html)<br>
+
+10. Menu Styling <br>
+
+11. Position <br>
+
+- Position absolute: sets the postition absolute to a relative element. only works if the container in which it is inside hast a relative position property.
+- Position relative
+- Position static (default)
+- Position fixed:
+- Position sticky: combination of static and fixed
+
+The Position is set with TOP LEFT RIGHT BOTTOM properties.
+
+12. Inline vs Block Elements
+
+13. Media Queries
+
+- to adapt the page for different screen sizes
+- it allows to change certain properties to change depending the screen size
+- examples:
+- @media only screen and (max-width: 500px) {}
+- @media (min-width: 501px) and (max-width: 768px) {}
+- @media (min-width: 1201px){}
+- @media (max-height: 500px{}
+
+16. Flexbox
