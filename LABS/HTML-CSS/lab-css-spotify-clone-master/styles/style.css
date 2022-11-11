@@ -6,3 +6,240 @@ Green: #00B172
 White: #FFF
 
 */
+
+* {
+  /* outline: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #1a1a1a;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* header + NAV */
+/* without using the JS Example  */
+
+/* header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+} */
+
+/* Javascript Example  */
+.javascript-example {
+  
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+  }
+
+  .js-background{
+    background-color:#00b172; !important;
+  }
+
+
+
+
+header img {
+  width: 150px;
+  padding: 20px;
+}
+
+nav {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  /* justify-content: space-between; */
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  /* justify-content: space-between; */
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: black;
+  padding: 0 15px;
+}
+
+/* Section 1 with Backgroundpic  */
+
+#section1 {
+  height: 800px;
+  background-image: url("../images/landing.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; */
+}
+
+.landing {
+  text-align: center;
+  padding: 0 90px;
+  color: white;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+
+#section1 h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  padding: 300px 40px 50px 40px;
+}
+
+#section1 p {
+  font-size: 1.5rem;
+  padding: 0 5vw;
+  line-height: 2.5rem;
+}
+
+/* section 2 */
+#section2 {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  text-align: center;
+}
+#section2 h2 {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 4px #00b172 solid;
+  padding: 30px 0 20px 0;
+}
+#section2 h3 {
+  color: #00b172;
+  padding: 10px 0;
+}
+
+#section2 p {
+  width: 70%;
+}
+.icons {
+  width: 35%;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: nowrap;
+  /* width: 90%; */
+  margin: 50px auto;
+}
+
+.iconsandtext {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* section 3  */
+
+#section3 {
+  color: white;
+  background-color: #00b172;
+  margin: 0 20px 20px 20px;
+  padding: 4rem;
+  /* height: 550px; */
+}
+
+#section3 h2 {
+  font-size: 1.5rem;
+  border-bottom: white solid 3px;
+  padding-bottom: 10px;
+  display: inline-block;
+  width: 90%;
+}
+
+.imgiconwhite {
+  /* width: 100px; */
+  width: 10vw;
+}
+
+.imgapp {
+  /* width: 55%; */
+  /* width: 300px; */
+  width: 20vw;
+}
+
+#container3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 550px; */
+}
+
+.container3left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* height: 100%; */
+  width: 40%;
+}
+.container3left p {
+  color: rgba(255, 255, 255, 0.651);
+  line-height: 1.5rem;
+  /* padding: 0 20px 0 0; */
+}
+
+.container3left h1 {
+  font-size: 1.1rem;
+  padding: 5vh 0 5vh 0;
+}
+
+/* .container3mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+}
+
+.container3right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 45%;
+} */
+
+@media screen and (max-width: 910px) {
+  .container3right {
+    display: none;
+  }
+  .container3left {
+    width: 60%;
+  }
+
+  #section1 h1 {
+    font-size: 3rem;
+  }
+  #section1 p {
+    font-size: 1.4rem;
+  }
+}
