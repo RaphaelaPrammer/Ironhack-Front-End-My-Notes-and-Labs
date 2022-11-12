@@ -39,19 +39,20 @@ main h3 {
   padding-bottom: 20px;
 }
 
-.img-ingredients {
+.img-ingredients,
+.img-directions {
   display: block;
   margin: 0 auto;
   padding-top: 40px;
   width: 40%;
 }
 
-.img-directions {
+/* .img-directions {
   display: block;
   margin: 0 auto;
   padding-top: 40px;
-  width: 30%;
-}
+  width: 40%;
+} */
 
 hr {
   margin-bottom: 50px;
