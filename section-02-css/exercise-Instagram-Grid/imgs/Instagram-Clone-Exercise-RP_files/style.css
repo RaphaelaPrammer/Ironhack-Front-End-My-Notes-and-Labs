@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgba(211, 211, 211, 0.105);
+  height: 100vh;
+  display: grid;
+  /* grid-template-columns: 20% 55% 25%; */
+  grid-template-columns: 20vw auto 20vw;
+  grid-template-rows: 20% auto;
+  grid-template-areas:
+    "navheading newPosts myProfile"
+    "navigation mainContent suggestions";
+}
+
+.newPosts {
+  grid-area: newPosts;
+}
+
+.navigation {
+  grid-area: navigation;
+}
+
+.myProfile {
+  grid-area: myProfile;
+}
+.mainContent {
+  grid-area: mainContent;
+}
+.suggestions {
+  grid-area: suggestions;
+}
+.nav-heading {
+  grid-area: navheading;
+  font-family: "Dancing Script", cursive;
+  place-self: center center;
+  /* margin: 20px; */
+}
+nav span {
+  font-size: 15px;
+  width: auto;
+  padding-left: 20px;
+}
+.icon-nav {
+  width: 5vh;
+}
+
+.iconAndText {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2vh 5vh;
+}
+
+.iconAndText:last-child {
+  margin-top: 50px;
+}
+/* .profile-small {
+  border-radius: 50px;
+} */
+
+.nav-menue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* NEW POSTS SECTION  */
+.picFriends {
+  width: 60px;
+  /* border-radius: 50%; */
+  border: red 1px solid;
+  clip-path: circle(40% at 40% 40%);
+}
+.newPosts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  border: solid lightgray 0.5px;
+  margin: 20px;
+  background-color: white;
+}
+/* .newPostsFriends {
+  display: flex;
+  justify-content: column;
+} */
