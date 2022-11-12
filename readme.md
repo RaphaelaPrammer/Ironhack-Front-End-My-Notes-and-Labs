@@ -54,9 +54,9 @@ This is the overview of the course content with personal notes.
 
 ### **[CSS](section-02-css)**
 
-1. [Basics](section-02-css\01-basic.html) <br>
+1. [**Basics**](section-02-css\01-basic.html) <br>
 
-2. [Selectors](section-02-css\02-selectors.html)<br>
+2. [**Selectors**](section-02-css\02-selectors.html)<br>
 
 - **Root Selector**: : root{} - to declare global variables
 - **Universal Selector**: \* {} - to reset the browsers default styles f.e. padding, margin, font-style...
@@ -64,18 +64,43 @@ This is the overview of the course content with personal notes.
 - **ID Selector**: #id {}
 - **Class Selector**: .classname {}
   <br>
-  other selectors to direct childs of a parent-element:<br>
-  **CSS Specificity**
+  <br>
+  **CSS Specificity** <br>
+  - p.intro {} -> selects all p elements with the class="intro"
+  - div,p {} -> selects all div and p elements
+  - div p {} -> selects p elements inside div elements
+  - div+p {} -> selects the first p element that is places inmediately after div elements -->"**first sibling**"
+  - p~ul {} -> selects every ul that is a **sibling** of a p element
+  - div>p {} -> selects p elements wehre the parent is a div element --> "**direct children**"
+    <br>
+    **CSS Pseudo selectors**<br>
+  - a:hover
+  - a:visited
+  - input:focus
+  - input:valid
+  - input::placeholder
+  - p::first-letter
+  - p::first-line
+  - p::after | before
+  - ::selection
+    <br>
+    **directing certain elements (eg. p)**:<br>
+  - p:first-child --> selects every p that is the first child of its parents
+  - p:last-child
+  - p:nth-child(n)
+  - p:nth-last-child(n)
+  - p:last-of-type
+  - p:nth-last-of-type(n)
+  - p:nth-of-type(n)
+  - p:only-child
 
-  **CSS Pseudo selectors**
+3. [**Fonts**](section-02-css\03-fonts.html)<br>
 
-  2.1 [Basics-Exercise](section-02-css\02-1-exercise.htmlsection-02-css\02-1-exercise.html)<br>
+- insert an external font from google fonts with the @import in stylesheet.
 
-3. [Fonts](section-02-css\03-fonts.html)<br>
+4. [**Text-Properties**](section-02-css\04-text-properties.html)<br>
 
-4. [Text-Properties](section-02-css\04-text-properties.html)<br>
-
-5. [Colors](section-02-css\05-colors.html)<br>
+5. [**Colors**](section-02-css\05-colors.html)<br>
    different ways how to define a color:
 
 - RGBA(A = Intensity)
@@ -83,19 +108,32 @@ This is the overview of the course content with personal notes.
 - Opacity: <br>
   0=Full Opacity, 1 = 0 Opacity
 
-6. [Border-Background](section-02-css\06-border-backgrounds.html)<br>
+6. [**Border-Background**](section-02-css\06-border-backgrounds.html)<br>
 
-7. [Box-Model](section-02-css\07-box-model.html)<br>
+- different ways to style borders
+- how to insert an image in CSS
+- background-image: url("...")
+- background-size: cover || contain;
+- background-repeat: no-repeat;
+- background-position: center || top
 
-8. [Float](section-02-css\08-float.html)<br>
+7. [**Box-Model**](section-02-css\07-box-model.html)<br>
 
-9. [Links-and-BUttons] (section-02-css\09-links-buttons.html)<br>
+- padding pushes the content to the inferior
+- margin
 
-10. Menu Styling <br>
+8. [**Float**](section-02-css\08-float.html)<br>
 
-11. Position <br>
+- float: left || right ||
+- clear: both --> at some point you need to add a div class="clear" .clear {clear:both} to not overwrite content
 
-- Position absolute: sets the postition absolute to a relative element. only works if the container in which it is inside hast a relative position property.
+9. [**Links-and-Buttons**](section-02-css\09-links-buttons.html)<br>
+
+10. [**Menu Styling**](section-02-css\10-menu-styling.html) <br>
+
+11. [**Position**](section-02-css\11-position.html) <br>
+
+- Position absolute: sets the position absolute to a relative element. only works if the container in which it is inside hast a relative position property.
 - Position relative
 - Position static (default)
 - Position fixed:
@@ -103,9 +141,9 @@ This is the overview of the course content with personal notes.
 
 The Position is set with TOP LEFT RIGHT BOTTOM properties.
 
-12. Inline vs Block Elements
+12. [**Inline vs Block Elements**](section-02-css\12-inline-vs-block.html)
 
-13. Media Queries
+13. [**Media Queries**](section-02-css\15-media-query-example.html)
 
 - to adapt the page for different screen sizes
 - it allows to change certain properties to change depending the screen size
@@ -115,13 +153,31 @@ The Position is set with TOP LEFT RIGHT BOTTOM properties.
 - @media (min-width: 1201px){}
 - @media (max-height: 500px{}
 
-16. [Flexbox] (section-02-css\16-flexbox-basics.html)
+16. [**Flexbox**](section-02-css\16-flexbox-basics.html)
+
+- display: flex
+  **Flex Container Properties** (parent container)<br>
+- flex-direction: row || column || column-reserve || row-reserve
+- justify-content --> to align items along the x-axis: flex-start || flex-end || center || space-between || space-around || space-evenly
+- align-items --> to align items along the Y-axis: flex-start || flex-end || center || baseline || stretch
+- align-content --> to align flex lines
+- flex-wrap
+- Shorthand: flex-flow: flex-direction flex-wrap
+
+**Flex Items Properties** (child elements) <br>
+
+- order: number --> gives a specific order to the flex items
+- flex-grow: number -->
+- flex-shrink: number --> specifies how much a flex item shrinkis relative to the rest.
+- flex-basis: px --> specifies the initial lenght of a flex item
+- Shorthand: flex: flex-grow flex-shrink flex-basis
+- align-self --> overrides the align-items prop of the flex-container.
 
 [**LAB Skype Clone Exercise**] (LABS\HTML-CSS\lab-css-spotify-clone-master)
 
-17. [GRID] (section-02-css\17-grid-basics.html)
+17. [**GRID**](section-02-css\17-grid-basics.html)
 
-- [external Link] (https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [external Link](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 - Grid Container - "Parent Container" in which the grd is being applied.
 - Grid Item: direct children, but children of children (sub-item) ist not being affected
