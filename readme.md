@@ -1,4 +1,4 @@
-![ironhack-logo-bcn](imgs\ironhack-img-bcn.jpg)
+![ironhack-logo-bcn](./imgs/ironhack-img-bcn.jpg)
 
 # Ironhack Course Conforcat November 2022
 
@@ -8,40 +8,40 @@ This is the overview of the course content with personal notes.
 
 ### **[HTML](section-01-html)**
 
-1. [Basic Layout](section-01-html\01-basic-layout.html) <br>
+1. [Basic Layout](./section-01-html/01-basic-layout.html) <br>
    In this course we learned the basic html layout.
 
-2. [Meta Tags](section-01-html\02-meta-tags.html)
+2. [Meta Tags](./section-01-html\02-meta-tags.html)
    <br>
 
-3. [Typography](section-01-html\03-typography.html) <br>
+3. [Typography](./section-01-html\03-typography.html) <br>
    in this lecture we learned different types of typo tags like `<strong>`, `<p>`, `<del>`, `<b>`, `<i>`, `<em>`, `<mark>`, `<sub>`, `<sub>`
 
-4. [Links](section-01-html\04-Links.html) <br>
+4. [Links](./section-01-html\04-Links.html) <br>
    different ways to insert a link: \_blank, \_self, \_parent, \_top
 
-5. [Images](section-01-html\05-images.html) <br>  
+5. [Images](./section-01-html\05-images.html) <br>  
    Here we learned how to attach an image, an image as a link to an external page, also how to add a `<figcaption>`-Figure Tag to add a title for the image
 
-6. [Lists](section-01-html\06-List.html) <br>
+6. [Lists](./section-01-html\06-List.html) <br>
    Ordered and unordered Lists
 
-7. [Layouts](section-01-html\07-layouts.html) <br>
+7. [Layouts](./section-01-html\07-layouts.html) <br>
    how to structure the body inside the html, with header, nav, main, article, div, section, footer
 
-8. [Layout Example](section-01-html\08-layout-example.html) <br>
+8. [Layout Example](./section-01-html\08-layout-example.html) <br>
 
-9. [Tables](section-01-html\09-tables.html)<br>
+9. [Tables](./section-01-html\09-tables.html)<br>
 
-10. [Inline-vs-Block-Elements](section-01-html\10-inline-vs-block.html)<br>
+10. [Inline-vs-Block-Elements](./section-01-html\10-inline-vs-block.html)<br>
 
-11. [IDs](section-01-html\11-ids.html)<br>
+11. [IDs](./section-01-html\11-ids.html)<br>
 
-12. [Classes](section-01-html\12-classes.html)<br>
+12. [Classes](./section-01-html\12-classes.html)<br>
 
-13. [Semantic-Example](section-01-html\13-semantic-example-consolodated.html)<br>
+13. [Semantic-Example](./section-01-html\13-semantic-example-consolodated.html)<br>
 
-14. [Forms](section-01-html\14-forms.html)<br>
+14. [Forms](./section-01-html\14-forms.html)<br>
 
 - Form Elements and Syntax
 - Form Attributes
@@ -49,14 +49,14 @@ This is the overview of the course content with personal notes.
 - Input Attributes
 - Example
 
-- [Forms-Example](section-01-html\14-forms-exercise.html)<br>
+- [Forms-Example](./section-01-html\14-forms-exercise.html)<br>
   Registration form with a bit of JavaScript
 
-### **[CSS](section-02-css)**
+### **[CSS](./section-02-css)**
 
-1. [**Basics**](section-02-css\01-basic.html) <br>
+1. [**Basics**](./section-02-css\01-basic.html) <br>
 
-2. [**Selectors**](section-02-css\02-selectors.html)<br>
+2. [**Selectors**](./section-02-css\02-selectors.html)<br>
 
 - **Root Selector**: : root{} - to declare global variables
 - **Universal Selector**: \* {} - to reset the browsers default styles f.e. padding, margin, font-style...
@@ -94,13 +94,13 @@ This is the overview of the course content with personal notes.
   - p:nth-of-type(n)
   - p:only-child
 
-3. [**Fonts**](section-02-css\03-fonts.html)<br>
+3. [**Fonts**](./section-02-css\03-fonts.html)<br>
 
 - insert an external font from google fonts with the @import in stylesheet.
 
-4. [**Text-Properties**](section-02-css\04-text-properties.html)<br>
+4. [**Text-Properties**](./section-02-css\04-text-properties.html)<br>
 
-5. [**Colors**](section-02-css\05-colors.html)<br>
+5. [**Colors**](./section-02-css\05-colors.html)<br>
    different ways how to define a color:
 
 - RGBA(A = Intensity)
@@ -108,7 +108,7 @@ This is the overview of the course content with personal notes.
 - Opacity: <br>
   0=Full Opacity, 1 = 0 Opacity
 
-6. [**Border-Background**](section-02-css\06-border-backgrounds.html)<br>
+6. [**Border-Background**](./section-02-css\06-border-backgrounds.html)<br>
 
 - different ways to style borders
 - how to insert an image in CSS
@@ -117,21 +117,21 @@ This is the overview of the course content with personal notes.
 - background-repeat: no-repeat;
 - background-position: center || top
 
-7. [**Box-Model**](section-02-css\07-box-model.html)<br>
+7. [**Box-Model**](./section-02-css\07-box-model.html)<br>
 
 - padding pushes the content to the inferior
 - margin
 
-8. [**Float**](section-02-css\08-float.html)<br>
+8. [**Float**](./section-02-css\08-float.html)<br>
 
 - float: left || right ||
 - clear: both --> at some point you need to add a div class="clear" .clear {clear:both} to not overwrite content
 
-9. [**Links-and-Buttons**](section-02-css\09-links-buttons.html)<br>
+9. [**Links-and-Buttons**](./section-02-css\09-links-buttons.html)<br>
 
-10. [**Menu Styling**](section-02-css\10-menu-styling.html) <br>
+10. [**Menu Styling**](./section-02-css\10-menu-styling.html) <br>
 
-11. [**Position**](section-02-css\11-position.html) <br>
+11. [**Position**](./section-02-css\11-position.html) <br>
 
 - Position absolute: sets the position absolute to a relative element. only works if the container in which it is inside hast a relative position property.
 - Position relative
@@ -141,9 +141,9 @@ This is the overview of the course content with personal notes.
 
 The Position is set with TOP LEFT RIGHT BOTTOM properties.
 
-12. [**Inline vs Block Elements**](section-02-css\12-inline-vs-block.html)
+12. [**Inline vs Block Elements**](./section-02-css\12-inline-vs-block.html)
 
-13. [**Media Queries**](section-02-css\15-media-query-example.html)
+13. [**Media Queries**](./section-02-css\15-media-query-example.html)
 
 - to adapt the page for different screen sizes
 - it allows to change certain properties to change depending the screen size
@@ -153,7 +153,7 @@ The Position is set with TOP LEFT RIGHT BOTTOM properties.
 - @media (min-width: 1201px){}
 - @media (max-height: 500px{}
 
-16. [**Flexbox**](section-02-css\16-flexbox-basics.html)
+16. [**Flexbox**](./section-02-css\16-flexbox-basics.html)
 
 - display: flex
   **Flex Container Properties** (parent container)<br>
@@ -175,9 +175,9 @@ The Position is set with TOP LEFT RIGHT BOTTOM properties.
 
 [**LAB Skype Clone Exercise**] (LABS\HTML-CSS\lab-css-spotify-clone-master)
 
-17. [**GRID**](section-02-css\17-grid-basics.html)
+17. [**GRID**](./section-02-css\17-grid-basics.html)
 
-- [external Link](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [external Link](./https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 - Grid Container - "Parent Container" in which the grd is being applied.
 - Grid Item: direct children, but children of children (sub-item) ist not being affected
