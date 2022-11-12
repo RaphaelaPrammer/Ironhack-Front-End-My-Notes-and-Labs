@@ -12,6 +12,7 @@
       <!-- <div> -->
       <img src="./images/spotify-logo.png" alt="Logo-Spotify" />
       <!-- </div> -->
+      <p>Clone by Raphaela Prammer</p>
       <nav>
         <ul>
           <li><a href="#Premium">Premium</a></li>
@@ -120,9 +121,15 @@
         const scroll = window.pageYOffset;
 
         if (scroll > 600) {
-          changeHeaderColor.classList.add("js-background");
+          changeHeaderColor.classList.add(
+            "js-background",
+            "js-font-color-white"
+          );
         } else {
-          changeHeaderColor.classList.remove("js-background");
+          changeHeaderColor.classList.remove(
+            "js-background",
+            "js-font-color-white"
+          );
         }
       };
     </script>

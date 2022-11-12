@@ -48,8 +48,15 @@ body {
   .js-background{
     background-color:#00b172; !important;
   }
-
-
+  /* .js-image-white {
+    background-image: url("../images/spotify-icon-white.png");
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+  } */
+  .js-font-color-white{
+    color:white; !important;
+  }
 
 
 header img {
@@ -58,7 +65,7 @@ header img {
 }
 
 nav {
-  width: 50%;
+  /* width: 50%; */
   align-items: center;
   display: flex;
   justify-content: flex-end;
