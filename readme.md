@@ -168,16 +168,14 @@ The Position is set with TOP LEFT RIGHT BOTTOM properties.
 
 - order: number --> gives a specific order to the flex items
 - flex-grow: number -->
-- flex-shrink: number --> specifies how much a flex item shrinkis relative to the rest.
-- flex-basis: px --> specifies the initial lenght of a flex item
+- flex-shrink: number --> specifies how much a flex item shrinks relative to the rest.
+- flex-basis: px --> specifies the initial length of a flex item
 - Shorthand: flex: flex-grow flex-shrink flex-basis
 - align-self --> overrides the align-items prop of the flex-container.
 
-[**LAB Skype Clone Exercise**] (LABS\HTML-CSS\lab-css-spotify-clone-master)
-
 17. [**GRID**](./section-02-css\17-grid-basics.html)
 
-- [external Link](./https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [external Link](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 - Grid Container - "Parent Container" in which the grd is being applied.
 - Grid Item: direct children, but children of children (sub-item) ist not being affected
@@ -213,5 +211,21 @@ The Position is set with TOP LEFT RIGHT BOTTOM properties.
 - grid-row-end: number of row
 - ..> with SPAN it fills out
 - Shorthand for this:
-- --> grid-column: 3 / span 2 --> (start at column 2 and expand 2 positions)
-- --> grid-row: third-line / 4 --> (start at third line )
+
+  - --> grid-column: 3 / span 2 --> (start at column 2 and expand 2 positions)
+  - --> grid-row: third-line / 4 --> (start at third line )
+
+- [Grid Example 1](./section-02-css\17.1-grid-example1.html)
+- [Grid Example 2](./section-02-css\18-grid-basic-example.html)
+- [Grid Example 3 - layout e-commerce](./section-02-css\18-grid-example-e-commerce-exapmle-.html)
+
+- [Grid Example INSTAGRAM LANDING PAGE CLONE](./section-02-css/exercise-Instagram-Grid/index.html)
+  - --> work in progress
+
+[**LABORATORIES**]
+<br>
+[**LAB Spotify Clone Exercise**](./LABS/HTML-CSS/lab-css-spotify-clone-master/index.html)
+
+[**JAVASCRIPT**]
+<br>
+Potential Interview questions (each link will take you to external resources, feel free to click them and learn more): JavaScript is a [prototype-based](https://en.wikipedia.org/wiki/Prototype-based_programming), [multi-paradigm](https://en.wikipedia.org/wiki/Programming_paradigm#Support_for_multiple_paradigms), [dynamically typed language](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures), [supporting object-oriented](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS), [imperative and structured](https://en.wikipedia.org/wiki/JavaScript#Imperative_and_structured), and declarative (e.g. [functional programming](https://en.wikipedia.org/wiki/JavaScript#Functional)) styles.
