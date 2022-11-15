@@ -266,6 +266,7 @@ Potential Interview questions (each link will take you to external resources, fe
   - variables have to start with letter(lowerCase), \_ (underline), $
   - camelCase !!!!
 - let and var variables can be reassigned, const cannot be reassigned.
+- TEMPLATE LITERAL `${variable}`
 
 [**Operators**](./section-03-js/06-operators.js)
 
@@ -286,5 +287,110 @@ Potential Interview questions (each link will take you to external resources, fe
 - If .. Else Statement:
   - if (condition) { code to execute if condition is true } else { other code if first condition is false}
 - Else If Statement .. connection of various if statements
-  -
+  - if(condition1) {code to execute} else if (condition2) {code to execute} else if (condition 3) {code to execute} else {default code if nothing of the above is true}
 - nested conditionals are possible too
+
+- **Ternary Operator**:
+- condition ? expr1 : expr2
+  - if condition is true, expr 1 will be executed, if condition is false, expr 2 will be executed --> 50/50 Use Cases
+- condition1 ? expr1 : condition2 ? expr3 : expr 2
+
+- **Switch Statement**:
+  - switch ( variable/expression) {
+  - case "x":
+  - code to execute;
+  - break;
+  - case "y":
+  - code to execute;
+  - break;
+  - default:
+  - code to execute;
+  - }
+
+**Methods**
+
+- .toUpperCase()
+- split()
+- reverse()
+- join()
+- parseInt()
+- parseFloat()
+
+[**Functions**](./section-03-js/08-functions.js)
+
+- for code which you want to reuse.
+- better to make "small" functions instead of "long complex" functions --> divide complex problem in several smaller programs.
+- Syntax:
+  - function functionName (parameter1, parameter 2, ...) { code }
+- Call the function:
+  - functionName (argument1, argument);
+- Return Statement:
+  - indicates the end of a function, code that comes afterwards will not be executed
+  - it will be stored and can be used to return the value in a variable,
+- A function can be inserted as a value in a variable
+
+- Anonymus Function -
+
+- Function Expression - are anonymus functions without name stored in a variable and it runs alone
+
+- **Arrow Function:**
+- let myFunctionName = (param1, param2) => {code return}
+  - if only one line of code/ one instance of code -> "return" and {} is not necessary
+  - if only one parameter -> () is not necessary
+
+[**LOOPS**](./section-03-js/09-loops.js)
+
+1. For Loop
+
+- for (initial expression; condition; actualized expression) { code }
+- [i] .. to loop in arrays
+- . .. to get information of an object in an array
+
+2. While Loop:
+
+- while (condition){code; variation of variable}
+- the variable inside the condition has to be changed, otherwise it will end in an infitive loop.
+
+[**ARRAY METHODS**](./section-03-js/10-array-methods.js)
+
+1. .map( () => {})
+
+- creates a new array with the results of calling a function provided on each element of this array.
+
+2. .filter( () => {}):
+
+- creates a new array with only the elements that meet the condition inside the function
+
+3. .sort()
+
+- This method is used to sort the array elements in ascending or descending order.
+
+4. .forEach( (element) => { } )
+
+- This method helps to loop over an array by executing a callback function provided(CALLBACK) for each element of an array.
+
+5. .concat(array1, array2)
+
+- This method is used to merge two or more arrays [ARRAYS] and returns a new array, without changing the existing arrays.
+
+- combines two or more arrays and returns a new array
+
+6. .every( (element) => { } )
+
+- returns either true or false depending a condition, checks every element of the array
+
+7. .some()
+
+- returns either true or false if at least one of the elements passes the condition
+
+8. .includes()
+
+- checks if there is an element inside the array that passes the condition, returning true or false.
+
+9. .join()
+
+- returns a new string which will be combined by the thing in the () eg. (""),
+
+10. .reduce()
+
+- This method applies a function against an accumulator and each element of the array to reduce it to a single value.
