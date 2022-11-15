@@ -229,3 +229,62 @@ The Position is set with TOP LEFT RIGHT BOTTOM properties.
 [**JAVASCRIPT**]
 <br>
 Potential Interview questions (each link will take you to external resources, feel free to click them and learn more): JavaScript is a [prototype-based](https://en.wikipedia.org/wiki/Prototype-based_programming), [multi-paradigm](https://en.wikipedia.org/wiki/Programming_paradigm#Support_for_multiple_paradigms), [dynamically typed language](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures), [supporting object-oriented](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS), [imperative and structured](https://en.wikipedia.org/wiki/JavaScript#Imperative_and_structured), and declarative (e.g. [functional programming](https://en.wikipedia.org/wiki/JavaScript#Functional)) styles.
+<br>
+
+[**01-JS-basics**](./section-03-js/01-js-basics.html)
+
+- insert JS inside the HTML inside the body in a script tag.
+- linking an external file with "<"script scr="link to js file"">"
+
+[**03-JS-Intro**](./section-03-js/03-intro.js)
+
+- Introduction of the console
+- console.log(document) --> opens #document in the console and shows the structure and all elements of the document.
+- Dot Notation - to get specific information about the document e.g. console.log(document.URL)
+- document.all -- returns all posititions sementically
+- with innerText / innerHTML this way you can also change the content of the html e.g. console.log(document.all[8].innerText = "WU TANG CLAN IS FOR THE CHILDREN")
+- console.table(["Barcelona", "Berlin", "Tokyo", "Liverpool"]) --> shows a table in the console
+
+[**Data Types**](./section-03-js/04-data-types.js)
+
+- Primitive Data: number, string, boolean, Null, undefined, symbol
+- Non Primitive Data:
+  - Object { key: "value", key: "value"}
+  - Array ["text", "text", "text"]
+  - usual structure: various objects within an array, in those objects there can be other objects or arrays --> NESTED STRUCTURE
+  - arrayName = [ {key: "value" }, {key: ["text", "text"]}]
+  - Accessing Objects with .dotNotation
+  - Accessing Arrays with []BracketNotation
+
+[**Variables**](./section-03-js/05-variables.js)
+
+- Variable Declaration with let varName , var varName (outdated)
+- Variable Initialization varName = 1; varName = "Hello"
+- const firstName = "Raphaela"
+  - with const you have to declare and initialize at the same time.
+- Naming Conventions:
+  - variables have to start with letter(lowerCase), \_ (underline), $
+  - camelCase !!!!
+- let and var variables can be reassigned, const cannot be reassigned.
+
+[**Operators**](./section-03-js/06-operators.js)
+
+- Assign Operators:
+  - "+" "-" "\*" "/", "++", "--", "\*\*"(exponention)
+- Arithmetical Operators:
+  - "==" "!=" "===" "!==" ">" ">=" "<" "<="
+  - return either true or false
+- Logical Operators:
+  - "&& AND, "|| OR", "! NOT"
+
+[**Conditionals**](./section-03-js/07-conditionals.js)
+
+- If Statement
+  - if (condition) { <br>
+    code to execute <br>
+    } <br>
+- If .. Else Statement:
+  - if (condition) { code to execute if condition is true } else { other code if first condition is false}
+- Else If Statement .. connection of various if statements
+  -
+- nested conditionals are possible too
