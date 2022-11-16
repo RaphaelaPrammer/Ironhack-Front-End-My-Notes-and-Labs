@@ -94,8 +94,8 @@ function sum(mixedArr) {
     } else if (mixedArr[i] === true) {
       mixedSum++;
     } else if (
-      typeof mixedArr[i] === "Object" ||
-      typeof mixedArr[i] === "Array"
+      typeof mixedArr[i] === "object" ||
+      typeof mixedArr[i] === "array"
     ) {
       throw new Error("ERROR");
     } else {
@@ -196,13 +196,7 @@ const wordsUnique = [
 ];
 
 function uniquifyArray(wordsUnique) {
-  if (wordsUnique.length === 0) return null;
-  let uniq = 0;
-  uniq = wordsUnique.reduce((a, b) => {
-    if (a.indexOf(b) < 0) a.push(b);
-    return a;
-  });
-}
+
 
 // Iteration #6: Find elements ----------------------------------------OK
 const wordsFind = [
@@ -245,7 +239,7 @@ function howManyTimes(wordsCount, word) {
   for (let i = 0; i < wordsCount.length; i++) {
     if ((wordsCount[i] = word)) counter++;
   }
-  if ((counter = 5)) return 5;
+  if (counter === 5) return 5;
 
   // for (item of wordsCount.flat()) {
   //   if (item == word) {
