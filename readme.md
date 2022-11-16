@@ -364,6 +364,8 @@ Potential Interview questions (each link will take you to external resources, fe
 3. .sort()
 
 - This method is used to sort the array elements in ascending or descending order.
+- arr.sort((a,b)=>(a > b ? -1 : 1)) --> ascending
+- arr.sort((a,b)=>(a > b ? 1 : -1)) --> descending
 
 4. .forEach( (element) => { } )
 
@@ -391,6 +393,159 @@ Potential Interview questions (each link will take you to external resources, fe
 
 - returns a new string which will be combined by the thing in the () eg. (""),
 
-10. .reduce()
+10. .reduce((total, current)=> { })
 
 - This method applies a function against an accumulator and each element of the array to reduce it to a single value.
+- array.reduce((total, current) => total + current) --> SUM OF ARRAY
+- array.reduce((total, current) => total.length >= current.length ? total : current) --> LONGEST ELEMENT OF AN ARRAY
+
+11. .find()
+
+- arr.find((element) => condition for the element we want to find)
+- returns the value of the first element of an array that passes the test in a check function.
+
+12. .findInIndex()
+
+- returns the index of the first element of an array that passes the test in a check function.
+
+13. .indexOf()
+
+- returns the index of the first occurrence of the specified element ("dog") in the array, or -1 if it is not found.
+- .indexOf("dog")
+
+14. .fill()
+
+- fills the elements of an array with a static value and returns the modified array.
+- array.fill(["dd", "Hello"])
+
+15. .slice()
+
+- returns a new array with the specified elements from start to end.
+- array.slice(beginning index, ending index)
+
+16. .reverse()
+
+- inverts an array instead. The element at the last index will be the first and the element at index 0 will be the last.
+- array.reverse()
+
+17. .push()
+
+- **adds** one or more elements to the **end** of the array and returns the new length of the array.
+- array.push("Dog")
+
+18. .pop()
+
+- **removes** the last element from the **end** of the array and returns that element.
+- array.pop()
+
+19. shift()
+
+- **removes** the **first** element at the beginning of an array and returns the new length of the array.
+- array.shift()
+
+20. .unshift()
+
+- **adds** one or more elements to the **beginning** of an array and returns the new length of the array.
+- array.unshift("Horse")
+  <br>
+  <br>
+  other Methods within in the Lab <br>
+
+- Math.max(num1, num2)
+- true = 1, false = 0
+
+- toFixed() --> rounds a number to a specific number of decimals. --> number.toFixed(number of decimals)
+
+[**DOM MANIPULATION 1**](./section-03-js/11-DOM-Manipulation.js)
+
+- each element of the document is possible to target.. for further use/manipulation
+- console.log(document.title)
+- console.log(window)
+
+**How to target the elements**
+
+1. getElementById - Method:
+
+- document.getElementById("id-name")
+
+2. getElementByClassName - Method:
+
+- document.getElementByClassName("class-name")
+- if there are various classes with the same name - possiblity to target each one by their index [0]
+
+3. getElementByTagName () - Method:
+
+- document.getElementByTagName("h3")[0]
+- by [] Notation target specific h3
+
+4. getElementByQuerySelector() - Method:
+
+- uses the same approach and specifity as in CSS
+- document.getElementByQuerySelector("#id-name")
+- document.getElementByQuerySelector(".class-name")
+- document.getElementByQuerySelector("h5") --> targets the first h5 tag!
+-
+- - document.getElementByQuerySelector("#id-name .class-name .class-name2")
+
+5. querySelectorAll(".className")
+
+6. Selectors for Parent, Children and Siblings
+
+- document.querySelector("#idname").lastElementChild
+- document.querySelector("#idname").firstElementChild
+- document.querySelector("#idname").children
+- document.querySelector("#idname").children[2]
+- document.querySelector("#idName").parentNode --> shows the parent id/class
+- document.querySelector("#idName").parentElement
+- document.querySelector("#idname").nextElementSibling
+- document.querySelector("#idname").previousElementSibling
+
+[**Dom Manipulation 2**]<br>
+
+- create Elements via JS:
+
+  - var = document.createElement("div")
+
+- Insert Content via JS:
+- .innerText // .innerHTML
+-
+- .appendChild
+  - var = document.createElement("div")
+  - var2 = document.querySelector("#parent #firstChild).appendChild(var)
+  -
+- add new class with JS:
+
+  - createElement.classList.add("")
+
+- assign an element a className
+  - var = document.createElement("div")
+  - var.className = "example"
+
+---
+
+- insert an element before another one
+
+  - var.insertBefore(new Element, element we want to have above)
+
+- var.replaceChild(newElement, what we want to replace)
+
+- var.removeChild(element we want to remove)
+
+**insert CSS STyles with JS**
+
+- create a variable which targets the button
+  - buttonEL = document.querySelector("#master")
+- create a function
+  - addFunction () => buttonEl.classList.add("classNameCSS") "no dot necessary here as it will insert this classNmeCSS in Html !!!"
+- give it an event:
+
+  - addEventListener("type of event eg click", functionName)
+  - buttonEl.addEventListener("click", addFunction)
+
+- .classList.add/remove/toggle
+
+- toggle is to alterate between classes
+
+**remove classes**
+
+-
