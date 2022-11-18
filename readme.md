@@ -221,15 +221,25 @@ The Position is set with TOP LEFT RIGHT BOTTOM properties.
 
 - [Grid Example INSTAGRAM LANDING PAGE CLONE](./section-02-css/exercise-Instagram-Grid/index.html)
   - --> work in progress
+    <br>
+    <br>
 
-[**LABORATORIES**]
+---
+
+### **[LABORATORIES](./LABS/)**<br><br>
+
+1. [**LAB Spotify Clone Exercise**](./LABS/HTML-CSS/lab-css-spotify-clone-master/index.html)
+   <br><br>
+
+---
+
 <br>
-[**LAB Spotify Clone Exercise**](./LABS/HTML-CSS/lab-css-spotify-clone-master/index.html)
 
-[**JAVASCRIPT**]
+### **[JAVA SCRIPT](./section-03-js/)**
+
 <br>
 Potential Interview questions (each link will take you to external resources, feel free to click them and learn more): JavaScript is a [prototype-based](https://en.wikipedia.org/wiki/Prototype-based_programming), [multi-paradigm](https://en.wikipedia.org/wiki/Programming_paradigm#Support_for_multiple_paradigms), [dynamically typed language](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures), [supporting object-oriented](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS), [imperative and structured](https://en.wikipedia.org/wiki/JavaScript#Imperative_and_structured), and declarative (e.g. [functional programming](https://en.wikipedia.org/wiki/JavaScript#Functional)) styles.
-<br>
+<br><br>
 
 [**01-JS-basics**](./section-03-js/01-js-basics.html)
 
@@ -245,7 +255,7 @@ Potential Interview questions (each link will take you to external resources, fe
 - with innerText / innerHTML this way you can also change the content of the html e.g. console.log(document.all[8].innerText = "WU TANG CLAN IS FOR THE CHILDREN")
 - console.table(["Barcelona", "Berlin", "Tokyo", "Liverpool"]) --> shows a table in the console
 
-[**Data Types**](./section-03-js/04-data-types.js)
+[**04-Data Types**](./section-03-js/04-data-types.js)
 
 - Primitive Data: number, string, boolean, Null, undefined, symbol
 - Non Primitive Data:
@@ -256,7 +266,7 @@ Potential Interview questions (each link will take you to external resources, fe
   - Accessing Objects with .dotNotation
   - Accessing Arrays with []BracketNotation
 
-[**Variables**](./section-03-js/05-variables.js)
+[**05-Variables**](./section-03-js/05-variables.js)
 
 - Variable Declaration with let varName , var varName (outdated)
 - Variable Initialization varName = 1; varName = "Hello"
@@ -268,7 +278,7 @@ Potential Interview questions (each link will take you to external resources, fe
 - let and var variables can be reassigned, const cannot be reassigned.
 - TEMPLATE LITERAL `${variable}`
 
-[**Operators**](./section-03-js/06-operators.js)
+[**06-Operators**](./section-03-js/06-operators.js)
 
 - Assign Operators:
   - "+" "-" "\*" "/", "++", "--", "\*\*"(exponention)
@@ -278,7 +288,7 @@ Potential Interview questions (each link will take you to external resources, fe
 - Logical Operators:
   - "&& AND, "|| OR", "! NOT"
 
-[**Conditionals**](./section-03-js/07-conditionals.js)
+[**07-Conditionals**](./section-03-js/07-conditionals.js)
 
 - If Statement
   - if (condition) { <br>
@@ -291,9 +301,10 @@ Potential Interview questions (each link will take you to external resources, fe
 - nested conditionals are possible too
 
 - **Ternary Operator**:
-- condition ? expr1 : expr2
-  - if condition is true, expr 1 will be executed, if condition is false, expr 2 will be executed --> 50/50 Use Cases
-- condition1 ? expr1 : condition2 ? expr3 : expr 2
+
+  - condition ? expr1 : expr2
+    - if condition is true, expr 1 will be executed, if condition is false, expr 2 will be executed --> 50/50 Use Cases
+  - condition1 ? expr1 : condition2 ? expr3 : expr 2
 
 - **Switch Statement**:
   - switch ( variable/expression) {
@@ -316,7 +327,7 @@ Potential Interview questions (each link will take you to external resources, fe
 - parseInt()
 - parseFloat()
 
-[**Functions**](./section-03-js/08-functions.js)
+[**08-Functions**](./section-03-js/08-functions.js)
 
 - for code which you want to reuse.
 - better to make "small" functions instead of "long complex" functions --> divide complex problem in several smaller programs.
@@ -334,16 +345,17 @@ Potential Interview questions (each link will take you to external resources, fe
 - Function Expression - are anonymus functions without name stored in a variable and it runs alone
 
 - **Arrow Function:**
-- let myFunctionName = (param1, param2) => {code return}
-  - if only one line of code/ one instance of code -> "return" and {} is not necessary
-  - if only one parameter -> () is not necessary
+  - let myFunctionName = (param1, param2) => {code return}
+    - if only one line of code/ one instance of code -> "return" and {} is not necessary
+    - if only one parameter -> () is not necessary
 
-[**LOOPS**](./section-03-js/09-loops.js)
+[**09-LOOPS**](./section-03-js/09-loops.js)
 
 1. For Loop
 
 - for (initial expression; condition; actualized expression) { code }
-- [i] .. to loop in arrays
+- for (let i = 0; i < array.length; i++) { code }
+- [ i ] .. to loop in arrays
 - . .. to get information of an object in an array
 
 2. While Loop:
@@ -351,7 +363,7 @@ Potential Interview questions (each link will take you to external resources, fe
 - while (condition){code; variation of variable}
 - the variable inside the condition has to be changed, otherwise it will end in an infitive loop.
 
-[**ARRAY METHODS**](./section-03-js/10-array-methods.js)
+[**10-ARRAY METHODS**](./section-03-js/10-array-methods.js)
 
 1. .map( () => {})
 
@@ -456,8 +468,11 @@ Potential Interview questions (each link will take you to external resources, fe
 
 - toFixed() --> rounds a number to a specific number of decimals. --> number.toFixed(number of decimals)
 
-[**DOM MANIPULATION 1**](./section-03-js/11-DOM-Manipulation.js)
+[**11-DOM MANIPULATION 1**](./section-03-js/11-DOM-Manipulation.js)
 
+- DOM (Document Object Model) is an API (Application Programming Interface) for HTML and XML documents. It provides a structured representation of the document (web page) and defines a way that the structure can be accessed from JavaScript. This allows us to change the document structure, style or content from JavaScript!
+
+- document - will return the source code of the website.
 - each element of the document is possible to target.. for further use/manipulation
 - console.log(document.title)
 - console.log(window)
@@ -466,28 +481,31 @@ Potential Interview questions (each link will take you to external resources, fe
 
 1. getElementById - Method:
 
-- document.getElementById("id-name")
+- let element = document.getElementById("id-name")
 
 2. getElementByClassName - Method:
 
-- document.getElementByClassName("class-name")
+- let element = document.getElementByClassName("class-name")
 - if there are various classes with the same name - possiblity to target each one by their index [0]
 
 3. getElementByTagName () - Method:
 
-- document.getElementByTagName("h3")[0]
+- let element = document.getElementByTagName("h3")[0]
 - by [] Notation target specific h3
 
 4. getElementByQuerySelector() - Method:
 
 - uses the same approach and specifity as in CSS
+- selects the first id/class/tag.. found
 - document.getElementByQuerySelector("#id-name")
 - document.getElementByQuerySelector(".class-name")
 - document.getElementByQuerySelector("h5") --> targets the first h5 tag!
 -
-- - document.getElementByQuerySelector("#id-name .class-name .class-name2")
+- document.getElementByQuerySelector("#id-name .class-name .class-name2")
 
-5. querySelectorAll(".className")
+5. querySelectorAll(".class or #id")
+
+- returns a Node List of all occuring .classes or #id
 
 6. Selectors for Parent, Children and Siblings
 
@@ -504,18 +522,18 @@ Potential Interview questions (each link will take you to external resources, fe
 
 - create Elements via JS:
 
-  - var = document.createElement("div")
+  - elementDiv = document.createElement("div")
 
 - Insert Content via JS:
-- .innerText // .innerHTML
--
+
+  - element.innerText // .innerHTML
+
 - .appendChild
-  - var = document.createElement("div")
-  - var2 = document.querySelector("#parent #firstChild).appendChild(var)
-  -
+  - elementDiv = document.createElement("div")
+  - element2 = document.querySelector("#parent #firstChild).appendChild(elementDiv)
 - add new class with JS:
 
-  - createElement.classList.add("")
+  - Element.classList.add("")
 
 - assign an element a className
   - var = document.createElement("div")
@@ -525,18 +543,24 @@ Potential Interview questions (each link will take you to external resources, fe
 
 - insert an element before another one
 
-  - var.insertBefore(new Element, element we want to have above)
+  - parentElement.insertBefore(new Element, element above which new element will be inserted)
+    - --> parentElement is the section (body, specific div) where you want to insert the new element
 
 - var.replaceChild(newElement, what we want to replace)
 
-- var.removeChild(element we want to remove)
+- parentElement.removeChild(element we want to remove)
 
-**insert CSS STyles with JS**
+- emailElement.innerHTML = ""
+
+  - to clear the whole element
+
+- **insert CSS STyles with JS**
 
 - create a variable which targets the button
   - buttonEL = document.querySelector("#master")
 - create a function
   - addFunction () => buttonEl.classList.add("classNameCSS") "no dot necessary here as it will insert this classNmeCSS in Html !!!"
+  -
 - give it an event:
 
   - addEventListener("type of event eg click", functionName)
@@ -546,6 +570,32 @@ Potential Interview questions (each link will take you to external resources, fe
 
 - toggle is to alterate between classes
 
-**remove classes**
+**[13-Browser-Events](./section-03-js/13-browser-events.html)**
 
--
+- work with tailwindcss.com --> CSS Library
+- insert link inside head with '<script src="https//cdn.tailwindcss.com"></script>'
+- gets all the predefined styles from this library and you only need to insert the classes in you html tags.
+
+- Event Handlers with addEventListener
+
+  - events: click, dblclick, mousemove, keypress
+
+  - button.addEventListener("event", defined function1, defined function 2...)
+
+    - --> function needs to be defined before - but can be reused in other Events
+
+  - button.addEventListener("event", function(){..})
+    - --> function can be defined inside the addEventListener
+
+- Event Handlers with method:
+
+  - button.oncklick = function(){..} // button.oncklick = () => { }
+  - oncklick, ondblclick, onmousemove, onkeypress
+
+- Assign Event Handlers with method directly inside the button tag in the html
+  - <button oncklick="alert("hello WOrld")">Click me </button>
+  - <button oncklick="alert(Date())">Click me </button>
+  - <button oncklick="( () => alert("hello world")) </button> .. inserting a function directly
+  - <button oncklick="functionName()">Click me </button> .. inserting a defined function from js
+
+**[Browser-Event-EXERCISES-in-Class](./section-03-js/13-events-exercise.html)**
