@@ -220,7 +220,7 @@ function doesWordExist(wordsFind, word) {
   return wordsFind.includes(word);
 }
 
-// Iteration #7: Count repetition---------------------------------- count 5 times missing-------
+// Iteration #7: Count repetition---------------------------------- count 5 times not working!??-------
 const wordsCount = [
   "machine",
   "matter",
