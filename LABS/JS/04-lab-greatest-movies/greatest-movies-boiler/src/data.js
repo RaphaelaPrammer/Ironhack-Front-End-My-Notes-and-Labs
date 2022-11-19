@@ -2001,4 +2001,8 @@ const movies = [
     score: 8,
   },
 ];
-module.exports = data;
+// if (typeof module !== "undefined") {
+//   module.exports = movies;
+// }
+
+// // export { movies };

@@ -156,7 +156,9 @@ The Position is set with TOP LEFT RIGHT BOTTOM properties.
 16. [**Flexbox**](./section-02-css\16-flexbox-basics.html)
 
 - display: flex
-  **Flex Container Properties** (parent container)<br>
+
+**Flex Container Properties** (parent container)<br>
+
 - flex-direction: row || column || column-reserve || row-reserve
 - justify-content --> to align items along the x-axis: flex-start || flex-end || center || space-between || space-around || space-evenly
 - align-items --> to align items along the Y-axis: flex-start || flex-end || center || baseline || stretch
@@ -175,7 +177,7 @@ The Position is set with TOP LEFT RIGHT BOTTOM properties.
 
 17. [**GRID**](./section-02-css\17-grid-basics.html)
 
-- [external Link](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [external Link - Complete Guide Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 - Grid Container - "Parent Container" in which the grd is being applied.
 - Grid Item: direct children, but children of children (sub-item) ist not being affected
@@ -199,6 +201,7 @@ The Position is set with TOP LEFT RIGHT BOTTOM properties.
 - grid-template-area: adding names to areas/cells which are then referenced to the grid area name of the child child element.
 - --> grid-template-area Name has to be defined in the parent-div-class --> makes reference to the grid area Name --> which is defined in the child-div-class
 - **Shorthand:** grid-template: [row 1 name] 25% "header header header" [row 2 name] 25% "footer footer footer" / auto auto
+
 -
 - column-gap // row-gap // grid-column-gap // grid-row-gap
 - gap Shorthand: gap: 10px(row-gap) 20px(column-gap)
@@ -228,7 +231,13 @@ The Position is set with TOP LEFT RIGHT BOTTOM properties.
 
 ### **[LABORATORIES](./LABS/)**<br><br>
 
-1. [**LAB Spotify Clone Exercise**](./LABS/HTML-CSS/lab-css-spotify-clone-master/index.html)
+1. [**LAB Iron Skydive Clone**](./LABS/HTML-CSS/labs-IronSkydive/)
+   <br><br>
+
+2. [**LAB Recipes Clone**](./LABS/HTML-CSS/lab-css-recipes-clone/)
+   <br><br>
+
+3. [**LAB Spotify Clone Exercise**](./LABS/HTML-CSS/lab-css-spotify-clone-master/index.html)
    <br><br>
 
 ---
@@ -481,42 +490,42 @@ Potential Interview questions (each link will take you to external resources, fe
 
 1. getElementById - Method:
 
-- let element = document.getElementById("id-name")
+   - let element = document.getElementById("id-name")
 
 2. getElementByClassName - Method:
 
-- let element = document.getElementByClassName("class-name")
-- if there are various classes with the same name - possiblity to target each one by their index [0]
+   - let element = document.getElementByClassName("class-name")
+   - if there are various classes with the same name - possiblity to target each one by their index [0]
 
 3. getElementByTagName () - Method:
 
-- let element = document.getElementByTagName("h3")[0]
-- by [] Notation target specific h3
+   - let element = document.getElementByTagName("h3")[0]
+   - by [] Notation target specific h3
 
 4. getElementByQuerySelector() - Method:
 
-- uses the same approach and specifity as in CSS
-- selects the first id/class/tag.. found
-- document.getElementByQuerySelector("#id-name")
-- document.getElementByQuerySelector(".class-name")
-- document.getElementByQuerySelector("h5") --> targets the first h5 tag!
--
-- document.getElementByQuerySelector("#id-name .class-name .class-name2")
+   - uses the same approach and specifity as in CSS
+   - selects the first id/class/tag.. found
+   - document.getElementByQuerySelector("#id-name")
+   - document.getElementByQuerySelector(".class-name")
+   - document.getElementByQuerySelector("h5") --> targets the first h5 tag!
+   -
+   - document.getElementByQuerySelector("#id-name .class-name .class-name2")
 
 5. querySelectorAll(".class or #id")
 
-- returns a Node List of all occuring .classes or #id
+   - returns a Node List of all occuring .classes or #id
 
 6. Selectors for Parent, Children and Siblings
 
-- document.querySelector("#idname").lastElementChild
-- document.querySelector("#idname").firstElementChild
-- document.querySelector("#idname").children
-- document.querySelector("#idname").children[2]
-- document.querySelector("#idName").parentNode --> shows the parent id/class
-- document.querySelector("#idName").parentElement
-- document.querySelector("#idname").nextElementSibling
-- document.querySelector("#idname").previousElementSibling
+   - document.querySelector("#idname").lastElementChild
+   - document.querySelector("#idname").firstElementChild
+   - document.querySelector("#idname").children
+   - document.querySelector("#idname").children[2]
+   - document.querySelector("#idName").parentNode --> shows the parent id/class
+   - document.querySelector("#idName").parentElement
+   - document.querySelector("#idname").nextElementSibling
+   - document.querySelector("#idname").previousElementSibling
 
 [**Dom Manipulation 2**]<br>
 
@@ -529,17 +538,18 @@ Potential Interview questions (each link will take you to external resources, fe
   - element.innerText // .innerHTML
 
 - .appendChild
+
   - elementDiv = document.createElement("div")
   - element2 = document.querySelector("#parent #firstChild).appendChild(elementDiv)
+
 - add new class with JS:
 
   - Element.classList.add("")
 
 - assign an element a className
+
   - var = document.createElement("div")
   - var.className = "example"
-
----
 
 - insert an element before another one
 
@@ -553,6 +563,7 @@ Potential Interview questions (each link will take you to external resources, fe
 - emailElement.innerHTML = ""
 
   - to clear the whole element
+    <br> <br>
 
 - **insert CSS STyles with JS**
 
@@ -593,9 +604,91 @@ Potential Interview questions (each link will take you to external resources, fe
   - oncklick, ondblclick, onmousemove, onkeypress
 
 - Assign Event Handlers with method directly inside the button tag in the html
-  - <button oncklick="alert("hello WOrld")">Click me </button>
-  - <button oncklick="alert(Date())">Click me </button>
-  - <button oncklick="( () => alert("hello world")) </button> .. inserting a function directly
-  - <button oncklick="functionName()">Click me </button> .. inserting a defined function from js
+  - <button oncklick="alert("hello WOrld")">Click me < /button>
+  - < button oncklick="alert(Date())">Click me < /button>
+  - < button oncklick="( () => alert("hello world")) </button> .. inserting a function directly
+  - < button oncklick="functionName()">Click me </> .. inserting a defined function from js
 
 **[Browser-Event-EXERCISES-in-Class](./section-03-js/13-events-exercise.html)**
+
+**[14-Async](./section-03-js/14-async.-class.js)**
+
+- Async Operations are when one operation for example takes some time to execute bc it is operating with an external server to fetch data, but meanwhile, with this function it does not stop the other functions from being executed and the flow can continue without stops.
+- with f.e. setTimeout(), the execution of a "longer, time consuming" function can be set for x seconds and the functions below continue to be executed.
+
+- setTimeout()
+
+  - setTimeout(function, milliseconds)
+  - runs the function after the time set inside the setTimeout function
+
+- clearTimeout()
+
+  - when we want to stop the calling of a function
+  - clearTimeout(intervalID) (reference to the function you want to stop)
+
+- setTimeout(function, miliseconds, param1, param2, ...)
+
+  - the parameters are the parameters/arguments of the function
+
+- **Callback Functions**
+
+  - A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+  - function (param1, callback (eg. callMe)) {.. callback ()}
+    - callback: function callMe() { .. }
+
+  --> VIEJA ESCUELA!! MORE COMPLICATED AND EASY TO COMMIT ERRORS!!!!
+
+- **Promises**
+
+  - The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+  - let promise = **new** Promise((resolve,reject)=>{ resolve(); reject() })
+  -
+  - resolve and reject are functions
+  - if promise has exit - resolve() will be executed
+  - if promise fails - reject() will be executed
+  -
+  - Promise can have different states:
+
+    - pending: initial state, neither fulfilled nor rejected.
+    - rejected: the operation failed.- error
+    - fulfilled: the operation was completed successfully.
+
+  - Chaining Promises: .then() .catch() .finally()
+
+    - .then((successValue(result))=>{.log(result).}) -> only will be executed if Promise is resolved
+
+    - .catch( errorValue(result)=>{..log(result).}) -> will be executed if Promise fails
+
+    - .finally( fName = () => {..}) -> will be executed independently of state resolved / rejected
+
+  - <u>Promises run automatically<u> (whereas a Callback functions which need to be called)
+
+- **Async / Await**
+
+- async function fName(parameter1, parameter2, ...paramaterN) {...}
+- const var = async () => { await otherFunction.. if...else..}
+- you have to call the function: var();
+- inside the var function, first it will check the otherFunction, and depending on the outcome of that function, it will execute the code below
+
+- **Async Try Catch**
+
+  - const var = async () 0> { try { await } catch {} }
+
+**[Examples CallBack Functions, Promises, Async/Await, Async/TryCatch](./section-03-js/async/)**
+
+---
+
+### LABORATORIOS JS
+
+**[LAB-Basic-Algorithms](./LABS/JS/01-JS-Basic-Algorithms/)**
+
+**[LAB-Functions-and-Arrays](./LABS/JS/02-lab-javascript-functions-and-arrays-master/)**
+
+**[LAB-Ironhack-CART](./LABS/JS/03-lab-dom-ironhack-cart-master/)**
+
+**[LAB-GREATEST-MOVIES](./LABS/JS/04-lab-greatest-movies/)**
+
+**[LAB----------](./LABS/JS//)**
+
+**[LAB-PROMISES](./LABS/JS/06-lab-promises-master/)**

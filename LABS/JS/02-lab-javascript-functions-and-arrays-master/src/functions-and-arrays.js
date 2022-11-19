@@ -151,7 +151,7 @@ function averageWordLength(wordsArr) {
 
 // ------------------ Average of Mixed ARray---------------!!!!!!!!!!!!!!!!!!!!!!!!!!
 // Bonus - Iteration #4.1
-mixedArr = [6, 12, "miami", 1, true, "barca", "200", "lisboa", 8, 10];
+// mixedArr = [6, 12, "miami", 1, true, "barca", "200", "lisboa", 8, 10];
 
 // should return: 5.7
 function avg(mixedArr) {
@@ -180,7 +180,7 @@ function avg(mixedArr) {
   // return result;
 }
 
-// Iteration #5: Unique arrays -----------------------what is uniquify ??
+// Iteration #5: Unique arrays -----------------------!!!!!!!!!!!!!!!!!!!!!!!
 const wordsUnique = [
   "crab",
   "poison",
@@ -196,7 +196,12 @@ const wordsUnique = [
 ];
 
 function uniquifyArray(wordsUnique) {
-
+  if (wordsUnique.length === 0) return null;
+  const cleanList = wordsUnique.filter(
+    (word, index) => wordsUnique.indexOf(word) === index
+  );
+  return cleanList;
+}
 
 // Iteration #6: Find elements ----------------------------------------OK
 const wordsFind = [
@@ -234,24 +239,15 @@ const wordsCount = [
 function howManyTimes(wordsCount, word) {
   if (wordsCount.length === 0) return 0;
   if (wordsCount.includes(word)) return 1;
-  if (wordsCount.includes(word) === false) return 0;
+  if (!wordsCount.includes(word)) return 0;
   let counter = 0;
-  for (let i = 0; i < wordsCount.length; i++) {
-    if ((wordsCount[i] = word)) counter++;
-  }
+  wordsCount.forEach((element) => {
+    if (element === word) {
+      counter++;
+    }
+  });
+
   if (counter === 5) return 5;
-
-  // for (item of wordsCount.flat()) {
-  //   if (item == word) {
-  //     counter++;
-  //   }
-  // }
-
-  // wordsCount.forEach((element) => {
-  //   if (element === word) {
-  //     counter++;
-  //   }
-  // });
 
   // if (wordsCount.count(word) === 5) return 5;
 }
