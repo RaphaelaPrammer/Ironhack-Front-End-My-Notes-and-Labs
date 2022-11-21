@@ -666,7 +666,7 @@ Potential Interview questions (each link will take you to external resources, fe
 
 - **Async / Await**
 
-- async function fName(parameter1, parameter2, ...paramaterN) {...}
+- async function fName(parameter1, parameter2, ...parameterN) {...}
 - const var = async () => { await otherFunction.. if...else..}
 - you have to call the function: var();
 - inside the var function, first it will check the otherFunction, and depending on the outcome of that function, it will execute the code below
@@ -676,6 +676,43 @@ Potential Interview questions (each link will take you to external resources, fe
   - const var = async () 0> { try { await } catch {} }
 
 **[Examples CallBack Functions, Promises, Async/Await, Async/TryCatch](./section-03-js/async/)**
+
+**[15-Fetch-API](./section-03-js/15-fetch-api.js)**
+
+- API = Application Programming Interface
+- thats how we communicate with our databases
+- Fetch API is a browser interface used for making HTTP requests and retrieving data from a server asynchronously.
+- REST API - is a server (computer) on the network that provides data to other programs and devices. A program or device can retrieve the data from the server by sending an HTTP request.
+
+- HTTP Methods:
+
+  - GET: requests a representation of the specified resource. Requests using GET should only be used to request data (they shouldn't include data).
+  - HEAD:
+  - POST: to send data to the server
+  - PUT: creates a new resource or replaces a representation of the target resource with the request payload.
+  - PATCH: applies partial modifications to a resource -- does not change the original resource
+  - DELETE: deletes the specified resource
+  - CONNECT: starts two-way communications with the requested resource. It can be used to open a tunnel.
+  - TRACE: performs a message loop-back test along the path to the target resource, providing a useful debugging mechanism.
+
+- JSON:
+
+  - JavaScript Object Notation
+  - is a standard <ul>text-based<ul> format for representing structured data in JavaScript object syntax.
+
+- JSON METHODS:
+
+  - JSON.parse() -> converts the Json-string into a JavaScript object
+  - JSON.stringify() -> converts a JavaScript object into a Json-string
+  - response.json() -> The json() method of the Response interface takes a Response stream and reads it to completion. It returns a promise which resolves with the result of parsing the body text as JSON.
+
+- FETCH METHOD:
+  - fetch("URL")
+  - let response = fetch("URL")
+  - starts the process of fetching a resource from the network, returning a promise which is fulfilled once the response is available.
+  - returning a promise and then usage of .then() and .catch ()...
+  - fetch(url).then((response)=>{...}).catch((error)=> {...})
+  -
 
 ---
 
