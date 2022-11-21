@@ -707,25 +707,27 @@ Potential Interview questions (each link will take you to external resources, fe
   - response.json() -> The json() method of the Response interface takes a Response stream and reads it to completion. It returns a promise which resolves with the result of parsing the body text as JSON.
 
 - FETCH METHOD:
+
   - fetch("URL")
   - let response = fetch("URL")
   - starts the process of fetching a resource from the network, returning a promise which is fulfilled once the response is available.
   - returning a promise and then usage of .then() and .catch ()...
   - fetch(url).then((response)=>{...}).catch((error)=> {...})
-  -
+
+  - response.text() --> converts a simple text into string " "
 
 ---
 
 ### LABORATORIOS JS
 
-**[LAB-Basic-Algorithms](./LABS/JS/01-JS-Basic-Algorithms/)**
+**1. [LAB-Basic-Algorithms](./LABS/JS/01-JS-Basic-Algorithms/)**
 
-**[LAB-Functions-and-Arrays](./LABS/JS/02-lab-javascript-functions-and-arrays-master/)**
+**2. [LAB-Functions-and-Arrays](./LABS/JS/02-lab-javascript-functions-and-arrays-master/)**
 
-**[LAB-Ironhack-CART](./LABS/JS/03-lab-dom-ironhack-cart-master/)**
+**3. [LAB-Ironhack-CART](./LABS/JS/03-lab-dom-ironhack-cart-master/)**
 
-**[LAB-GREATEST-MOVIES](./LABS/JS/04-lab-greatest-movies/)**
+**4. [LAB-GREATEST-MOVIES](./LABS/JS/04-lab-greatest-movies/)**
 
-**[LAB----------](./LABS/JS//)**
+**5. [LAB-PROMISES](./LABS/JS/06-lab-promises-master/)**
 
-**[LAB-PROMISES](./LABS/JS/06-lab-promises-master/)**
+\*\*6.
