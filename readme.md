@@ -716,6 +716,16 @@ Potential Interview questions (each link will take you to external resources, fe
 
   - response.text() --> converts a simple text into string " "
 
+  - fetch("URL, { <br>
+    method: "POST", <br>
+    headers: { <br>
+    "content-type":"application/json", <br>
+    Accept: "text/plain, application/json" <br>
+    } <br>
+    body: JSON.stringify({title: title, body:body})<br>
+    })
+    .then()
+
 ---
 
 ### LABORATORIOS JS
@@ -731,3 +741,11 @@ Potential Interview questions (each link will take you to external resources, fe
 **5. [LAB-PROMISES](./LABS/JS/06-lab-promises-master/)**
 
 \*\*6.
+
+---
+
+### MID TERM PROJECT
+
+[Link to Repo](https://github.com/RaphaelaPrammer/Ironhack-Mid-Term-Project)
+
+---
