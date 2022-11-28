@@ -1,20 +1,26 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import MyFirstComponentVue from './components/vueBasics/MyFirstComponent.vue';
+import TextDirective from "./components/vueBasics/2-TextDirective.vue";
+import HTMLDirective from "./components/vueBasics/3-htmlDirective.vue";
 </script>
 
 <template>
+<div>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <div class="wrapper">
+      <HelloWorld msg="My Name is Raphaela Prammer" />
     </div>
   </header>
 
   <main>
-    <TheWelcome />
+    <MyFirstComponentVue/>
+    <hr>
+    <TextDirective/>
+    <hr>
+    <HTMLDirective/>
   </main>
+</div>
 </template>
 
 <style scoped>

@@ -747,5 +747,64 @@ Potential Interview questions (each link will take you to external resources, fe
 ### MID TERM PROJECT
 
 [Link to Repo](https://github.com/RaphaelaPrammer/Ironhack-Mid-Term-Project)
+[Link to Deploy](https://ironhack-mid-term-project.vercel.app/)
 
 ---
+
+<br>
+
+### **[VUE JS](./section-04-vue/)**
+
+<br>
+**VUE BASICS:**
+
+1. Setup:
+
+- npm init vue@latest
+- cd to project
+- npm install
+- npm run dev
+
+2. Components:
+   the component-template .vue file has to contain following parts
+
+- <template> </template>
+- <script setup> </script>
+- <style> </style>
+
+- within the App.vue file you have to link all the component-templates
+  --> @import componentName from "./ link to this component"
+
+3. Built-in Directives:
+
+- [Text Interpolation](../ironhack-nov-2022/section-04-vue/my-first-vue-project/src/components/vueBasics/2-TextDirective.vue)
+  - v-text=""
+  - v-html="" -> inject it into a div, and declare the variable with the html in a div with template literals ` `
+
+4. [Attribute-Binding](../ironhack-nov-2022/section-04-vue/my-first-vue-project/src/components/vueBasics/4-attribute-binding.vue)
+
+- to bind certain elements with our js.
+- ID Binding:
+
+  - h2 v-bind:id="headingID"
+  - inside the script: const headingID = ref("my-cool-id")
+  - Shorthand: h2 :id="headingID"
+
+- binding reserved Keywords:
+
+  - :disabled=".."
+
+- binding classes:
+
+  - v-bind:class=".."
+
+- binding conditional classes through conditionals:
+
+  - v-bind:class="isSoldOut ? 'sold-out' : 'available' "
+
+- binding classes as arrays:
+  - v-bind:class="['class1', 'class2']"
+
+-binding Styles:
+
+- v-bind:styles="{color:textColor, textDecoration:'underline'}"
