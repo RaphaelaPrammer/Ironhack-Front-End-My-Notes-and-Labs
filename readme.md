@@ -746,17 +746,22 @@ Potential Interview questions (each link will take you to external resources, fe
 
 ### MID TERM PROJECT
 
+(21.11. - 25.11.2022)
+
 [Link to Repo](https://github.com/RaphaelaPrammer/Ironhack-Mid-Term-Project)
 [Link to Deploy](https://ironhack-mid-term-project.vercel.app/)
+[Link to Presentation](https://docs.google.com/presentation/d/1nnxh7kI0le9AYgGK5YIsofYAgxOkQTaNWcChNVqv698/edit?usp=share_link)
 
 ---
 
 <br>
 
-### **[VUE JS](./section-04-vue/)**
+### **[VUE JS 3](./section-04-vue/)**
 
-<br>
-**VUE BASICS:**
+- is used to create dynamic & data driven websites (SPAs = Single Page Application) or stand-alone widgets/components (eg. signup form, search bar)
+- to handle all the rendering within the browser and not sends requests for all things to the server, only one initial request and the server sends back the vue-bundle. --> this is called SPA, because everything is handled within one html, which in initially is empty
+  <br>
+  **VUE BASICS:**
 
 1. Setup:
 
@@ -774,12 +779,19 @@ Potential Interview questions (each link will take you to external resources, fe
 
 - within the App.vue file you have to link all the component-templates
   --> @import componentName from "./ link to this component"
+  --> and link them within the main tag eg. <FirstComponent />
+
+- import {ref, relative} from "vue"
+  - ref - for primitive Data (string, number, boolean, null)
+  - relative - for non-primitive Data (objects, arrays)
 
 3. Built-in Directives:
 
 - [Text Interpolation](../ironhack-nov-2022/section-04-vue/my-first-vue-project/src/components/vueBasics/2-TextDirective.vue)
-  - v-text=""
-  - v-html="" -> inject it into a div, and declare the variable with the html in a div with template literals ` `
+
+  - v-text=" variable "
+
+  - v-html=" variable " -> inject it into a div, and declare the variable with the html in a div with template literals ` `
 
 4. [Attribute-Binding](../ironhack-nov-2022/section-04-vue/my-first-vue-project/src/components/vueBasics/4-attribute-binding.vue)
 
