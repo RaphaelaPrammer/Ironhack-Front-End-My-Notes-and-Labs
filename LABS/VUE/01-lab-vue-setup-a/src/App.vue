@@ -13,11 +13,13 @@ import FirstComponent from "./components/FirstComponent.vue";
         <nav>
           <RouterLink to="/">Home</RouterLink>
           <RouterLink to="/about">About</RouterLink>
+          <RouterLink to="/example-route">Example Route</RouterLink>
+          <RouterLink to="/more-pics">More Pics</RouterLink>
         </nav>
       </div>
     </header>
-    <FirstComponent />
-    <RouterLink to="/more-pics">More Pics</RouterLink>
+    <!-- <FirstComponent /> -->
+
     <RouterView />
   </div>
 </template>

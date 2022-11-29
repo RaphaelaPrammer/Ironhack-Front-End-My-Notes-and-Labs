@@ -1,5 +1,11 @@
-<script setup></script>
+<script setup>
+import FirstComponent from "../components/FirstComponent.vue";
+</script>
 
 <template>
-  <main></main>
+  <div>
+    <main>
+      <FirstComponent />
+    </main>
+  </div>
 </template>

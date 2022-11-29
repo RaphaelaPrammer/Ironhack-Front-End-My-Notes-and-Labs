@@ -1,26 +1,35 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import MyFirstComponentVue from './components/vueBasics/MyFirstComponent.vue';
+import HelloWorld from "./components/HelloWorld.vue";
+import MyFirstComponentVue from "./components/vueBasics/MyFirstComponent.vue";
 import TextDirective from "./components/vueBasics/2-TextDirective.vue";
 import HTMLDirective from "./components/vueBasics/3-htmlDirective.vue";
+import AttributeBinding from "./components/vueBasics/4-attribute-binding.vue";
+import ConditionalRendering from "./components/vueBasics/5-ConditionalRendering.vue";
+import IterateingElements from "./components/vueBasics/7-IteratingElements.vue";
 </script>
 
 <template>
-<div>
-  <header>
+  <div>
+    <header>
       <div class="wrapper">
-      <HelloWorld msg="My Name is Raphaela Prammer" />
-    </div>
-  </header>
+        <HelloWorld msg="VUE BASICS" />
+      </div>
+    </header>
 
-  <main>
-    <MyFirstComponentVue/>
-    <hr>
-    <TextDirective/>
-    <hr>
-    <HTMLDirective/>
-  </main>
-</div>
+    <main>
+      <!-- <MyFirstComponentVue />
+      <hr />
+      <TextDirective />
+      <hr />
+      <HTMLDirective />
+      <hr />
+      <AttributeBinding /> -->
+      <!-- <hr />
+      <ConditionalRendering />
+      <hr /> -->
+      <IterateingElements />
+    </main>
+  </div>
 </template>
 
 <style scoped>
