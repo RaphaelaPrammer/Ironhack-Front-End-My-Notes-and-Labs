@@ -785,13 +785,13 @@ Potential Interview questions (each link will take you to external resources, fe
   - ref - for primitive Data (string, number, boolean, null)
   - relative - for non-primitive Data (objects, arrays)
 
-3. Built-in Directives:
+**Built-in Directives:**
 
-- [Text Interpolation](../ironhack-nov-2022/section-04-vue/my-first-vue-project/src/components/vueBasics/2-TextDirective.vue)
+3. [Text Interpolation](../ironhack-nov-2022/section-04-vue/my-first-vue-project/src/components/vueBasics/2-TextDirective.vue)
 
-  - v-text=" variable "
+- v-text=" variable "
 
-  - v-html=" variable " -> inject it into a div, and declare the variable with the html in a div with template literals ` `
+- v-html=" variable " -> inject it into a div, and declare the variable with the html in a div with template literals ` `
 
 4. [Attribute-Binding](../ironhack-nov-2022/section-04-vue/my-first-vue-project/src/components/vueBasics/4-attribute-binding.vue)
 
@@ -820,3 +820,21 @@ Potential Interview questions (each link will take you to external resources, fe
 -binding Styles:
 
 - v-bind:styles="{color:textColor, textDecoration:'underline'}"
+
+**VUE ROUTER:**
+
+- is the external library
+- views - .vue files will be used for internal links (home, about, ... )
+
+- inside the router-index.js all routing links are linked/imported/added
+- and later in the App.vue (the main structure) the links are being referenced with a Router Link <RouterLink to="/about"> About </RouterLink> (instead of an <a> tag, which will reload the page and slow down the experience)
+
+5. [Conditional Rendering:]
+
+- insert JS conditionals directly in the template
+- <h2 v-if="number === 0">This number is 0 </h2>
+- v-else-if
+- v-else
+- Rules!!:
+  - v-else and v-else-if always have to have a v-if conditional associated to and come right after/below the v-if statement!
+- v-show="ref-variable": if condition is false, it adds a display:none style to the element - it will still be visible in the DOM, unless like with v-if, the element will be eliminated from the Dom.
