@@ -838,3 +838,14 @@ Potential Interview questions (each link will take you to external resources, fe
 - Rules!!:
   - v-else and v-else-if always have to have a v-if conditional associated to and come right after/below the v-if statement!
 - v-show="ref-variable": if condition is false, it adds a display:none style to the element - it will still be visible in the DOM, unless like with v-if, the element will be eliminated from the Dom.
+
+6. [Iterating Elements:](./section-04-vue/my-first-vue-project/src/components/vueBasics/7-IteratingElements.vue)
+
+- v-for
+- v-for="item in array"
+- v-for="(item, index) in array" :key="index"
+- <li v-for="worldCupTeam in worldCupTeams" v-bind:key="woldCupTeam"> {{worldCupTeam}}
+- When you set a unique key attribute, it ensures that your component works the way you’d expect
+
+- combination of iteration and conditional:
+  -
