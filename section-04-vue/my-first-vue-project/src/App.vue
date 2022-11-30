@@ -6,6 +6,7 @@ import HTMLDirective from "./components/vueBasics/3-htmlDirective.vue";
 import AttributeBinding from "./components/vueBasics/4-attribute-binding.vue";
 import ConditionalRendering from "./components/vueBasics/5-ConditionalRendering.vue";
 import IterateingElements from "./components/vueBasics/7-IteratingElements.vue";
+import SlotsExercise from "./components/vueBasics/slots-exercise/Slot-ex.vue";
 </script>
 
 <template>
@@ -27,7 +28,9 @@ import IterateingElements from "./components/vueBasics/7-IteratingElements.vue";
       <!-- <hr />
       <ConditionalRendering />
       <hr /> -->
-      <IterateingElements />
+      <!-- <IterateingElements />
+      <hr> -->
+      <SlotsExercise />
     </main>
   </div>
 </template>
