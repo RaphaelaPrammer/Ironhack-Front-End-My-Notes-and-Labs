@@ -821,6 +821,8 @@ Potential Interview questions (each link will take you to external resources, fe
 
 - v-bind:styles="{color:textColor, textDecoration:'underline'}"
 
+---
+
 **VUE ROUTER:**
 
 - is the external library
@@ -829,23 +831,30 @@ Potential Interview questions (each link will take you to external resources, fe
 - inside the router-index.js all routing links are linked/imported/added
 - and later in the App.vue (the main structure) the links are being referenced with a Router Link <RouterLink to="/about"> About </RouterLink> (instead of an <a> tag, which will reload the page and slow down the experience)
 
-5. [Conditional Rendering:]
+---
+
+5. [Conditional Rendering:](./section-04-vue/my-first-vue-project/src/components/vueBasics/5-ConditionalRendering.vue)
 
 - insert JS conditionals directly in the template
 - <h2 v-if="number === 0">This number is 0 </h2>
 - v-else-if
 - v-else
 - Rules!!:
+
   - v-else and v-else-if always have to have a v-if conditional associated to and come right after/below the v-if statement!
+
+- wrapping multiple elements in a template-tag to show all of them if condition is true.
+
 - v-show="ref-variable": if condition is false, it adds a display:none style to the element - it will still be visible in the DOM, unless like with v-if, the element will be eliminated from the Dom.
 
 6. [Iterating Elements:](./section-04-vue/my-first-vue-project/src/components/vueBasics/7-IteratingElements.vue)
 
 - v-for
 - v-for="item in array"
-- v-for="(item, index) in array" :key="index"
+- v-for="(item, index) in array" :key="item"
 - <li v-for="worldCupTeam in worldCupTeams" v-bind:key="woldCupTeam"> {{worldCupTeam}}
 - When you set a unique key attribute, it ensures that your component works the way you’d expect
+- v-for="(item, key, index) in array" :key="item"
 
 - combination of iteration and conditional:
-  -
+  - v-for and v-if combined to only display items meeting the condition while looping the array/object
