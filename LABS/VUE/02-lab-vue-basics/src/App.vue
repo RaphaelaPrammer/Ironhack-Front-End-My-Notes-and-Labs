@@ -1,6 +1,4 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import TheWelcome from "./components/TheWelcome.vue";
 import NavBar from "./components/NavBar.vue";
 import Footer from "./components/Footer.vue";
 import Iteration2 from "./components/Iteration2.vue";
@@ -12,9 +10,7 @@ import Iteration5 from "./components/Iteration5.vue";
 <template>
   <div>
     <header>
-      <div class="wrapper">
-        <HelloWorld msg="VUE LAB 02 Raphaela Prammer" />
-      </div>
+      <h1>Vue Lab 02 Raphaela Prammer</h1>
     </header>
     <nav>
       <NavBar />
