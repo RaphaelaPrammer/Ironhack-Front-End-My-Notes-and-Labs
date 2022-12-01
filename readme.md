@@ -873,3 +873,22 @@ Potential Interview questions (each link will take you to external resources, fe
 
 - define the prop in the script
   - defineProps({ propName: {type:string, required:true }})
+
+9. Methods - Computed Properties: : (01/12/2022):
+
+- computed (()=>{})
+- is used instead of inline logic
+- should be used for simple operations only.
+- only actualize when the user changes something.
+- A computed property automatically tracks its reactive dependencies
+- computed properties are cached based on their reactive dependencies -> A computed property will only re-evaluate when some of its reactive dependencies have changed
+
+- Computed Caching vs Method:
+
+  - computed caching would always execute the function even if nothing had changed -
+
+- Getters and Setters:
+  - Computed properties are by default getter-only.
+  - computed ( { get(){}, set(){} })
+  - get - receives the values we want to manipulate in cache
+  - set(newValue) - sets the new Value with the changes of the values of get in the cache
