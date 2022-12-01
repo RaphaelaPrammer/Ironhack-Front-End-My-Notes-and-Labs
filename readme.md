@@ -860,10 +860,6 @@ Potential Interview questions (each link will take you to external resources, fe
 
   - v-for and v-if combined to only display items meeting the condition while looping the array/object
 
-- Computed Properties:
-  - will actualize the variables from the DOM inputs
-  - v-model=" var " --> to connect with reactive data from inputs --> two-way-binding!
-
 7. Slots:
 
 - are being used to embed content within its other components
@@ -892,3 +888,15 @@ Potential Interview questions (each link will take you to external resources, fe
   - computed ( { get(){}, set(){} })
   - get - receives the values we want to manipulate in cache
   - set(newValue) - sets the new Value with the changes of the values of get in the cache
+
+10. **Two Way Data Binding:**
+
+- will actualize the variables from the DOM inputs
+- to connect form data inputs with our data
+
+- v-model=" var " --> to connect with reactive data from inputs --> two-way-binding!
+
+- @submit.prevent="submitForm" (submitForm is a function)
+- v-model.trim=" " -> deletes whitespace of the end from user-inputs
+- v-model.lazy=" " -> syncs the input with the data after the input/change is completed (and not, as default, after each character )
+- v-model.number=" " ->

@@ -12,6 +12,8 @@
 // import PropsExampleBio2 from "./components/vueBasics/8-Props/8-Props-Bio-2.vue";
 // import BandCard from "./components/vueBasics/8-Props/bandCardComps/BandCard.vue";
 import ComputedProperties from "./components/vueBasics/8-ComputedProperties.vue";
+import TwoWayBinding from "./components/vueBasics/9-TwoWayBinding.vue";
+import ExerciseFormBinding from "./components/vueBasics/9-Exercise-FormBinding.vue";
 
 // const bands = ref([
 //   {
@@ -74,7 +76,11 @@ import ComputedProperties from "./components/vueBasics/8-ComputedProperties.vue"
         :bandSong="band.popularSong"
         :bandSongInfo="band.popularSongInfo"
       /> -->
-      <ComputedProperties />
+      <!-- <ComputedProperties />
+      <hr> -->
+      <!-- <TwoWayBinding /> -->
+      <hr />
+      <ExerciseFormBinding />
     </main>
   </div>
 </template>
