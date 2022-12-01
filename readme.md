@@ -857,4 +857,19 @@ Potential Interview questions (each link will take you to external resources, fe
 - v-for="(item, key, index) in array" :key="item"
 
 - combination of iteration and conditional:
+
   - v-for and v-if combined to only display items meeting the condition while looping the array/object
+
+- Computed Properties:
+  - will actualize the variables from the DOM inputs
+  - v-model=" var " --> to connect with reactive data from inputs --> two-way-binding!
+
+7. Slots:
+
+- are being used to embed content within its other components
+- <slot /> is a "placeholder"
+
+8. Props
+
+- define the prop in the script
+  - defineProps({ propName: {type:string, required:true }})
