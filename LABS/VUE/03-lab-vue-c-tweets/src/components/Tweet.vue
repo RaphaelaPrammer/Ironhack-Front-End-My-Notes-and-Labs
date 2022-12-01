@@ -1,15 +1,15 @@
 <template>
   <div class="tweet">
-    <ProfileImage :image="props.image" />
+    <ProfileImage :image="props.tweet.user.image" />
 
     <div class="body">
       <div class="top">
-        <User :user="props.user" />
+        <User :user="props.tweet.user" />
 
-        <Timestamp :timestamp="props.timestamp" />
+        <Timestamp :timestamp="props.tweet.timestamp" />
       </div>
 
-      <Message :message="props.message" />
+      <Message :message="props.tweet.message" />
 
       <Actions />
     </div>
@@ -26,10 +26,7 @@ import Actions from "./Actions.vue";
 import ProfileImage from "./ProfileImage.vue";
 
 const props = defineProps({
-  user: Object,
-  image: String,
-  timestamp: String,
-  message: String,
+  tweet: Object,
 });
 </script>
 

@@ -1,12 +1,9 @@
 <template>
   <div class="app">
     <Tweet
-      v-for="(tweet, index) in tweets"
+      v-for="(tweetEntry, index) in tweets"
       :key="index"
-      :user="tweet.user"
-      :image="tweet.user.image"
-      :timestamp="tweet.timestamp"
-      :message="tweet.message"
+      :tweet="tweetEntry"
     />
   </div>
 </template>
