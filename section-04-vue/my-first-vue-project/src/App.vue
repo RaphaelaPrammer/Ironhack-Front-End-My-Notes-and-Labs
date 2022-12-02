@@ -14,7 +14,8 @@
 import ComputedProperties from "./components/vueBasics/8-ComputedProperties.vue";
 import TwoWayBinding from "./components/vueBasics/9-TwoWayBinding.vue";
 import ExerciseFormBinding from "./components/vueBasics/9-Exercise-FormBinding.vue";
-
+import Watchers from "./components/vueBasics/10-Watchers.vue";
+import ExerciseWatchers from "./components/vueBasics/10-ExerciseWatcher.vue";
 // const bands = ref([
 //   {
 //     bandInfo: {
@@ -79,8 +80,12 @@ import ExerciseFormBinding from "./components/vueBasics/9-Exercise-FormBinding.v
       <!-- <ComputedProperties />
       <hr> -->
       <!-- <TwoWayBinding /> -->
-      <hr />
+      <!-- <hr />
       <ExerciseFormBinding />
+      <hr /> -->
+      <Watchers />
+      <hr />
+      <ExerciseWatchers />
     </main>
   </div>
 </template>
