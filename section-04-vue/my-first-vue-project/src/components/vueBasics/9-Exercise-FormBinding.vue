@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>PRIMAVERA IS COMMING---THE FESTIVAL!</h1>
+    <h1>PRIMAVERA IS COMING---THE FESTIVAL!</h1>
     <div id="primaveraForm">
       <form @submit.prevent="submitForm">
         <div id="user-input-formName-data">
@@ -170,11 +170,11 @@ const submitForm = () => {
         Name: ${primaveraData.formName}
         Email: ${primaveraData.formEmail}
         Artists: ${primaveraData.artists}
-        Alcohol: ${primaveraData.consumeAlcohol}
-        Drugs: ${primaveraData.consumeDrugs}
-        Dressed Black: ${primaveraData.dressedBlack}
-        Above 21: ${primaveraData.ageAbove21}
-        Group above 2pax: ${primaveraData.groupBiggerThanTwo}
+        Alcohol: ${primaveraData.consumeAlcohol ? "yes" : "no"}
+        Drugs: ${primaveraData.consumeDrugs ? "yes" : "no"}
+        Dressed Black: ${primaveraData.dressedBlack ? "yes" : "no"}
+        Above 21: ${primaveraData.ageAbove21 ? "yes" : "no"}
+        Group above 2pax: ${primaveraData.groupBiggerThanTwo ? "yes" : "no"}
         Suggestions: ${primaveraData.suggestions}
         `);
 };
