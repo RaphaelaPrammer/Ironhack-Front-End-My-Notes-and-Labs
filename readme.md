@@ -815,11 +815,11 @@ Potential Interview questions (each link will take you to external resources, fe
   - v-bind:class="isSoldOut ? 'sold-out' : 'available' "
 
 - binding classes as arrays:
+
   - v-bind:class="['class1', 'class2']"
 
--binding Styles:
-
-- v-bind:styles="{color:textColor, textDecoration:'underline'}"
+- binding Styles:
+  - v-bind:styles="{color:textColor, textDecoration:'underline'}"
 
 ---
 
@@ -841,11 +841,11 @@ Potential Interview questions (each link will take you to external resources, fe
 - v-else
 - Rules!!:
 
-  - v-else and v-else-if always have to have a v-if conditional associated to and come right after/below the v-if statement!
+- v-else and v-else-if always have to have a v-if conditional associated to and come right after/below the v-if statement!
 
 - wrapping multiple elements in a template-tag to show all of them if condition is true.
 
-- v-show="ref-variable": if condition is false, it adds a display:none style to the element - it will still be visible in the DOM, unless like with v-if, the element will be eliminated from the Dom.
+- **v-show**="ref-variable": if condition is false, it adds a display:none style to the element - it will still be visible in the DOM, unless like with v-if, the element will be eliminated from the Dom.
 
 6. [Iterating Elements:](./section-04-vue/my-first-vue-project/src/components/vueBasics/7-IteratingElements.vue)
 
@@ -860,24 +860,25 @@ Potential Interview questions (each link will take you to external resources, fe
 
   - v-for and v-if combined to only display items meeting the condition while looping the array/object
 
-7. Slots:
+7. [Slots:](./section-04-vue/my-first-vue-project/src/components/vueBasics/7-slots/)
 
 - are being used to embed content within its other components
 - <slot /> is a "placeholder"
 
-8. Props
+8. [Props](./section-04-vue/my-first-vue-project/src/components/vueBasics/8-Props/)
 
 - define the prop in the script
   - defineProps({ propName: {type:string, required:true }})
 
-9. Methods - Computed Properties: : (01/12/2022):
+9. [Methods - Computed Properties: (01/12/2022):](./section-04-vue/my-first-vue-project/src/components/vueBasics/8-ComputedProperties.vue)
 
 - computed (()=>{})
-- is used instead of inline logic
+- is used instead of inline logic as this can get very messy sometimes
 - should be used for simple operations only.
 - only actualize when the user changes something.
 - A computed property automatically tracks its reactive dependencies
 - computed properties are cached based on their reactive dependencies -> A computed property will only re-evaluate when some of its reactive dependencies have changed
+- We can use computed properties to calculate and display values based on a value or set of values in the data model.
 
 - Computed Caching vs Method:
 
@@ -889,7 +890,7 @@ Potential Interview questions (each link will take you to external resources, fe
   - get - receives the values we want to manipulate in cache
   - set(newValue) - sets the new Value with the changes of the values of get in the cache
 
-10. **Two Way Data Binding:**
+10. [**Two Way Data Binding:**](./section-04-vue/my-first-vue-project/src/components/vueBasics/9-TwoWayBinding.vue)
 
 - will actualize the variables from the DOM inputs
 - to connect form data inputs with our data
@@ -900,3 +901,9 @@ Potential Interview questions (each link will take you to external resources, fe
 - v-model.trim=" " -> deletes whitespace of the end from user-inputs
 - v-model.lazy=" " -> syncs the input with the data after the input/change is completed (and not, as default, after each character )
 - v-model.number=" " ->
+
+  10.1 [Exercise Form Binding - Primavera Sound Form](./section-04-vue/my-first-vue-project/src/components/vueBasics/9-Exercise-FormBinding.vue)
+
+11. [Watchers](./section-04-vue/my-first-vue-project/src/components/vueBasics/10-Watchers.vue)
+
+- sometimes we need to run a function whenever a property value changes. In this case, we can use watchers to perform “side effects” such as mutating the DOM or changing another piece of state based on the result of an async operation
