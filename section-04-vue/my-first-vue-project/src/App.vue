@@ -16,6 +16,10 @@ import TwoWayBinding from "./components/vueBasics/9-TwoWayBinding.vue";
 import ExerciseFormBinding from "./components/vueBasics/9-Exercise-FormBinding.vue";
 import Watchers from "./components/vueBasics/10-Watchers.vue";
 import ExerciseWatchers from "./components/vueBasics/10-ExerciseWatcher.vue";
+import Events from "./components/vueBasics/11-Events/11-Events.vue";
+import EventsExample1 from "./components/vueBasics/11-Events/ParentComponent.vue";
+import EventsExample2 from "./components/vueBasics/11-Events/A-General.vue";
+
 // const bands = ref([
 //   {
 //     bandInfo: {
@@ -83,9 +87,16 @@ import ExerciseWatchers from "./components/vueBasics/10-ExerciseWatcher.vue";
       <!-- <hr />
       <ExerciseFormBinding />
       <hr /> -->
-      <Watchers />
+      <!-- <Watchers />
+      <hr /> -->
+      <!-- <ExerciseWatchers />
+      <hr /> -->
+      <Events />
       <hr />
-      <ExerciseWatchers />
+      <EventsExample1 />
+      <hr />
+      <EventsExample2 />
+      <hr />
     </main>
   </div>
 </template>

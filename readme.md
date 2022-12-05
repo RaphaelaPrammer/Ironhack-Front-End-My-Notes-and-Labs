@@ -907,3 +907,77 @@ Potential Interview questions (each link will take you to external resources, fe
 11. [Watchers](./section-04-vue/my-first-vue-project/src/components/vueBasics/10-Watchers.vue)
 
 - sometimes we need to run a function whenever a property value changes. In this case, we can use watchers to perform “side effects” such as mutating the DOM or changing another piece of state based on the result of an async operation
+- watch (x, (newX)=>{})
+
+  - x.. the type of reactive data what we want to watch
+  - (newX) .. want we want to do
+
+- watch with getters with reactive Data:
+
+  - watch( ()=> {return obj.count}, (count)=>{console.log(`count is : ${count}`)})
+
+- watch( list, (newValue, oldValue)=>{}, {deep:true})
+- deep:true needs to be inserted when working with non-primitive data!!!!
+
+12. [Events & Custom Events](./section-04-vue/my-first-vue-project/src/components/vueBasics/11-Events.vue)
+
+- v-on:click =" function || inline logic eg. count++"
+- @click="function"
+
+- Event Modifiers:
+
+  - .stop
+  - .prevent -> the submit event will not reload the page
+  - modifiers can be changed: @click.stop.prevent
+  - .self
+  -
+
+- Custom Modifiers/Events:
+
+  - custom events are defined in a child component and passed on/ imported to the parent component.
+
+  - defineEmits( [ 'name1', 'name2', 'name3'])
+  - const emit = defineEmits(['name1', 'name2'])
+
+  - defineEmits("coolEmit")
+  - const emit = defineEmit("coolEmit2")
+
+  - <button @click="$emit('name1')">
+
+  - within the parent component: @import the child-component
+  - <ChildComponent @name1="function"
+
+13. Hooks
+
+- LifeCycle Event: Hook:
+
+  - Creation - beforeCreate, created --> run on the components creation
+  - Mounting - beforeMount, mounted --> run wen the DOM is mounted
+  - Updating - beforeUpdate, updated --> run when reactive data is modified
+  - Unmounting - beforeUnmount, unmounted --> runs right before the element is destroyed
+
+- import { onMounted} from "vue"
+
+- onBeforeMount – called before mounting begins
+- onMounted – called when component is mounted
+- onBeforeUpdate – called when reactive data changes and before re-render
+- onUpdated – called after re-render
+- onBeforeUnmount – called before the Vue instance is destroyed
+- onUnmounted – called after the instance is destroyed
+- onActivated – called when a kept-alive component is activated
+- onDeactivated – called when a kept-alive component is deactivated
+- onErrorCaptured – called when an error is captured from a child component
+
+14. State Management
+
+- The state of an app will determine what your users see, how it appears to them, which data is stored etc.
+
+- Pinia Stroe
+
+  - library
+  - to store certain variables, methods within the pinia and hence have the possibility to access these variables from more components.
+
+  Supabase:
+
+  - to create a database
+  - for the back part of the project
